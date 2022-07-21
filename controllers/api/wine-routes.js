@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { User, Vote, Wine, Comment } = require('../../models');
-// const withAuth = require('../../utils/auth');
 const sequelize = require('../../config/connection');
 
 //GET api/wine
@@ -97,42 +96,42 @@ router.get('/:id', (req, res) => {
 });
 
 //POST api/wine/
-router.post('/', (req, res) => {
-  Post.create({
-    name: req.body.name,
-    description: req.body.description,
-    varietal: req.body.varietal,
-    food_pairing: req.body.food_pairing,
-    wine_image: req.body.wine_image,
-    wine_url: req.body.wine_url,
-    food_image: req.body.food_image,
-    food_url: req.body.food_url,
-  })
-    .then((dbWineData) => res.json(dbWineData))
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
+// router.post('/', (req, res) => {
+//   Post.create({
+//     name: req.body.name,
+//     description: req.body.description,
+//     varietal: req.body.varietal,
+//     food_pairing: req.body.food_pairing,
+//     wine_image: req.body.wine_image,
+//     wine_url: req.body.wine_url,
+//     food_image: req.body.food_image,
+//     food_url: req.body.food_url,
+//   })
+//     .then((dbWineData) => res.json(dbWineData))
+//     .catch((err) => {
+//       console.log(err);
+//       res.status(500).json(err);
+//     });
+// });
 
-//DELETE api/wine/:id
-router.delete('/:id', (req, res) => {
-  Wine.destroy({
-    where: {
-      id: req.params.id,
-    },
-  })
-    .then((dbWineData) => {
-      if (!dbWineData) {
-        res.status(404).json({ message: 'No wine found with this id' });
-        return;
-      }
-      res.json(dbWineData);
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
+// //DELETE api/wine/:id
+// router.delete('/:id', (req, res) => {
+//   Wine.destroy({
+//     where: {
+//       id: req.params.id,
+//     },
+//   })
+//     .then((dbWineData) => {
+//       if (!dbWineData) {
+//         res.status(404).json({ message: 'No wine found with this id' });
+//         return;
+//       }
+//       res.json(dbWineData);
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//       res.status(500).json(err);
+//     });
+// });
 
 module.exports = router;

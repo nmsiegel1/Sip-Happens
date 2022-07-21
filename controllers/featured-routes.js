@@ -55,10 +55,10 @@ router.get('/wine/:id', (req, res) => {
       }
 
       // serialize the data
-      const post = dbWineData.get({ plain: true });
+      const wine = dbWineData.get({ plain: true });
 
       // pass data to template
-      res.render('single-post', { post, loggedIn: req.session.loggedIn });
+      res.render('single-wine', { wine, loggedIn: req.session.loggedIn });
     })
     .catch((err) => {
       console.log(err);

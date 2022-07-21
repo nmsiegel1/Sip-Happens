@@ -10,13 +10,17 @@ class Wine extends Model {
     }).then(() => {
       return Wine.findOne({
         where: {
-          id: body.post_id,
+          id: body.wine_id,
         },
         attributes: [
           'id',
-          'post_url',
-          'title',
-          'created_at',
+          'varietal',
+          'name',
+          'description',
+          'food_pairing',
+          'food_image',
+          'wine_image',
+          'wine_url',
           [
             sequelize.literal(
               '(SELECT COUNT(*) FROM vote WHERE post.id = vote.wine_id)'
@@ -83,13 +87,6 @@ Wine.init(
       },
     },
     food_image: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        isUrl: true,
-      },
-    },
-    food_url: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
