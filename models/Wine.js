@@ -14,7 +14,7 @@ class Wine extends Model {
         },
         attributes: [
           'id',
-          'varietal',
+          'type',
           'name',
           'description',
           'food_pairing',
@@ -56,7 +56,7 @@ Wine.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    varietal: {
+    type: {
       type: DataTypes.STRING,
       allowNull: false,
     },

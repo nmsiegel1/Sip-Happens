@@ -20,7 +20,7 @@ router.get('/wine/:id', (req, res) => {
       'id',
       'name',
       'description',
-      'varietal',
+      'type',
       'food_pairing',
       'wine_image',
       'wine_url',
