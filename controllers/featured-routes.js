@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Wine, Comment } = require('../models');
+const { User, Wine, Comment, Vote } = require('../models');
 const sequelize = require('../config/connection');
 
 router.get('/login', (req, res) => {
@@ -25,7 +25,6 @@ router.get('/wine/:id', (req, res) => {
       'wine_image',
       'wine_url',
       'food_image',
-      'food_url',
       [
         sequelize.literal(
           '(SELECT COUNT(*) FROM vote WHERE wine.id = vote.wine_id)'

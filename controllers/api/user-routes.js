@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Comment } = require('../../models');
+const { User, Comment, Wine, Vote } = require('../../models');
 
 // should we add vote? not sure what to connect it to
 
@@ -26,6 +26,16 @@ router.get('/:id', (req, res) => {
       {
         model: Comment,
         attributes: ['id', 'comment_text', 'created_at'],
+        include: {
+          model: Wine,
+          attributes: ['name'],
+        },
+      },
+      {
+        model: Wine,
+        attributes: ['name'],
+        through: Vote,
+        as: 'voted_wines',
       },
     ],
   })
