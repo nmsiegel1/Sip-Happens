@@ -6,7 +6,7 @@ class Wine extends Model {
   static upvote(body, models) {
     return models.Vote.create({
       user_id: body.user_id,
-      wine_id: body.post_id,
+      wine_id: body.wine_id,
     }).then(() => {
       return Wine.findOne({
         where: {
@@ -23,7 +23,7 @@ class Wine extends Model {
           'wine_url',
           [
             sequelize.literal(
-              '(SELECT COUNT(*) FROM vote WHERE post.id = vote.wine_id)'
+              '(SELECT COUNT(*) FROM vote WHERE wine.id = vote.wine_id)'
             ),
             'vote_count',
           ],
@@ -69,25 +69,25 @@ Wine.init(
       allowNull: false,
     },
     food_pairing: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     wine_image: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
       validate: {
         isUrl: true,
       },
     },
     wine_url: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
       validate: {
         isUrl: true,
       },
     },
     food_image: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
       validate: {
         isUrl: true,
