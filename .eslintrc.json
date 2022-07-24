@@ -31,7 +31,8 @@
       "indent": ["error", 2],
       "quotes": ["error", "single"],
       "semi": ["error", "always"],
-      "radix": "off"
+      "radix": "off",
+      "parser": "babel-eslint"
     },
     "extends": ["prettier"]
   }
