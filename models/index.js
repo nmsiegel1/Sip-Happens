@@ -3,25 +3,21 @@ const Vote = require('./Vote');
 const Comment = require('./Comment');
 const Wine = require('./Wine');
 
-// associations
 User.belongsToMany(Wine, {
   through: Vote,
   as: 'voted_wine',
 
   foreignKey: 'user_id',
-  onDelete: 'SET NULL',
 });
 
 Wine.belongsToMany(User, {
   through: Vote,
   as: 'voted_wine',
   foreignKey: 'wine_id',
-  onDelete: 'SET NULL',
 });
 
 Vote.belongsTo(User, {
   foreignKey: 'user_id',
-  onDelete: 'SET NULL',
 });
 
 Vote.belongsTo(Wine, {
@@ -38,7 +34,6 @@ Wine.hasMany(Vote, {
 
 Comment.belongsTo(User, {
   foreignKey: 'user_id',
-  onDelete: 'SET NULL',
 });
 
 Comment.belongsTo(Wine, {
@@ -47,7 +42,6 @@ Comment.belongsTo(Wine, {
 
 User.hasMany(Comment, {
   foreignKey: 'user_id',
-  onDelete: 'SET NULL',
 });
 
 Wine.hasMany(Comment, {
