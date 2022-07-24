@@ -25,7 +25,6 @@ router.get('/', (req, res) => {
     include: [
       {
         model: Comment,
-        // as: 'comments',
         attributes: ['id', 'comment_text', 'wine_id', 'user_id', 'created_at'],
         include: {
           model: User,
@@ -71,7 +70,6 @@ router.get('/:id', (req, res) => {
     include: [
       {
         model: Comment,
-        as: 'comments',
         attributes: ['id', 'comment_text', 'wine_id', 'user_id', 'created_at'],
         include: {
           model: User,
@@ -99,6 +97,7 @@ router.get('/:id', (req, res) => {
 });
 
 // PUT/api/wine/upvote
+// expects user_id: '', wine_id: ''
 router.put('/upvote', withAuth, (req, res) => {
   //make sure session exists first
   if (req.session) {
@@ -114,50 +113,6 @@ router.put('/upvote', withAuth, (req, res) => {
         res.status(500).json(err);
       });
   }
-  // Vote.created({
-  //   user_id: req.body.user_id,
-  //   wine_id: req.body.wine_id,
-  // })
-  //   .then((dbWineData) => res.json(dbWineData))
-  //   .catch((err) => res.json(err));
 });
-
-//POST api/wine/
-// router.post('/', (req, res) => {
-//   Post.create({
-//     name: req.body.name,
-//     description: req.body.description,
-//     type: req.body.type,
-//     food_pairing: req.body.food_pairing,
-//     wine_image: req.body.wine_image,
-//     wine_url: req.body.wine_url,
-//     food_image: req.body.food_image,
-//   })
-//     .then((dbWineData) => res.json(dbWineData))
-//     .catch((err) => {
-//       console.log(err);
-//       res.status(500).json(err);
-//     });
-// });
-
-// //DELETE api/wine/:id
-// router.delete('/:id', (req, res) => {
-//   Wine.destroy({
-//     where: {
-//       id: req.params.id,
-//     },
-//   })
-//     .then((dbWineData) => {
-//       if (!dbWineData) {
-//         res.status(404).json({ message: 'No wine found with this id' });
-//         return;
-//       }
-//       res.json(dbWineData);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//       res.status(500).json(err);
-//     });
-// });
 
 module.exports = router;

@@ -1,9 +1,8 @@
 const router = require('express').Router();
 const { User, Comment, Wine, Vote } = require('../../models');
 
-// should we add vote? not sure what to connect it to
-
 // GET all users
+// GET api/users
 router.get('/', (req, res) => {
   User.findAll({
     attributes: { exclude: ['password'] },
@@ -16,6 +15,7 @@ router.get('/', (req, res) => {
 });
 
 //GET users by id
+// GET api/users/:id
 router.get('/:id', (req, res) => {
   User.findOne({
     attributes: { exclude: ['password'] },
@@ -53,6 +53,7 @@ router.get('/:id', (req, res) => {
 });
 
 //POST users
+// POST api/users
 router.post('/', (req, res) => {
   //expects {'username': 'example', 'email': 'example@example.com', 'password': '****'}
   User.create({
@@ -115,6 +116,7 @@ router.post('/logout', (req, res) => {
 });
 
 // update user by id
+// PUT api/users/:id
 router.put('/:id', (req, res) => {
   //expects {'username': 'example', 'email': 'example@example.com', 'password': '****'}
   User.update(req.body, {
@@ -137,6 +139,7 @@ router.put('/:id', (req, res) => {
 });
 
 // delete user by id
+// DELETE api/users/:id
 router.delete('/:id', (req, res) => {
   User.destroy({
     where: {
