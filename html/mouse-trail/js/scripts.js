@@ -6,6 +6,12 @@ const app = new Application({
 
 document.body.appendChild(app.view);
 
+const defaultIcon = "url('images/wine.png'),auto";
+const hoverIcon = "url('images/wine_trippy.png),auto";
+
+app.renderer.plugins.interaction.cursorStyles.default = defaultIcon;
+app.renderer.plugins.interaction.cursorStyles.hover = hoverIcon;
+
 const loader = PIXI.Loader.shared;
 loader.add('backgroundImage', './images/backgroundWine.jpg').load(setup);
 
@@ -61,12 +67,6 @@ function setup(loader, resources) {
     radius: 80,
   };
 
-  const shockwaveFilter1 = new PIXI.filters.ShockwaveFilter(
-    [Math.random() * app.screen.width, Math.random() * app.screen.height],
-    options1,
-    0
-  );
-
   const options2 = {
     amplitude: 80, //300
     wavelength: 45, //160
@@ -74,22 +74,27 @@ function setup(loader, resources) {
     radius: 100,
   };
 
+  const shockwaveFilter1 = new PIXI.filters.ShockwaveFilter(
+    [Math.random() * app.screen.width, Math.random() * app.screen.height],
+    options1,
+    0
+  );
+
   const shockwaveFilter2 = new PIXI.filters.ShockwaveFilter(
+    [Math.random() * app.screen.width, Math.random() * app.screen.height],
+    options1,
+    0
+  );
+
+  const shockwaveFilter3 = new PIXI.filters.ShockwaveFilter(
     [Math.random() * app.screen.width, Math.random() * app.screen.height],
     options2,
     0
   );
 
-  const options3 = {
-    amplitude: 105, //300
-    wavelength: 65, //160
-    speed: 300, //500
-    radius: 160,
-  };
-
-  const shockwaveFilter3 = new PIXI.filters.ShockwaveFilter(
+  const shockwaveFilter4 = new PIXI.filters.ShockwaveFilter(
     [Math.random() * app.screen.width, Math.random() * app.screen.height],
-    options3,
+    options2,
     0
   );
 
@@ -98,26 +103,34 @@ function setup(loader, resources) {
     shockwaveFilter1,
     shockwaveFilter2,
     shockwaveFilter3,
+    shockwaveFilter4,
   ];
+
+  let x, y;
+  window.addEventListener('mousemove', function (e) {
+    x = e.screenX;
+    y = e.screenY;
+  });
 
   app.ticker.add(function () {
     displacementSprite.x++;
     if (displacementSprite.x > displacementSprite.width)
       displacementSprite.x = 0;
 
-    createRaindrops(shockwaveFilter1, 0.7);
-    createRaindrops(shockwaveFilter2, 0.5);
-    createRaindrops(shockwaveFilter3, 1);
+    createRaindrops(shockwaveFilter1, 0.7, 100);
+    createRaindrops(shockwaveFilter2, 0.5, 150);
+    createRaindrops(shockwaveFilter3, 1, 200);
+    createRaindrops(shockwaveFilter4, 1.2, 250);
   });
 
-  function createRaindrops(filter, resetTime) {
+  function createRaindrops(filter, resetTime, distance) {
     filter.time += 0.01;
     if (filter.time > resetTime) {
       filter.time = 0;
-      filter.center = [
-        Math.random() * app.screen.width,
-        Math.random() * app.screen.height,
-      ];
+      const plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+      const a = x + distance * Math.random() * plusOrMinus;
+      const b = y + distance * Math.random() * plusOrMinus;
+      filter.center = [a, b];
     }
   }
 }
