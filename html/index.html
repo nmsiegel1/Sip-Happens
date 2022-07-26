@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixi mouse</title>
+    <!-- <script src="../public/javascript/pixi.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
+    <script>
+      let app;
+
+      window.onload = function () {
+        app = new PIXI.Application({
+          backgroundColor: 0xaaaaaa,
+        });
+
+        document.body.appendChild(app.view);
+
+        //const textureDefault = PIXI.Texture.from('images/wine.png');
+        //const textureHover = PIXI.Texture.from('images/wine_trippy.png');
+        //const defaultIcon = new PIXI.Sprite(textureDefault);
+        //const hoverIcon = new PIXI.Sprite(textureHover);
+
+        // Add custom cursor styles
+        //app.renderer.plugins.interaction.cursorStyles.default = defaultIcon;
+        //app.renderer.plugins.interaction.cursorStyles.hover = hoverIcon;
+
+        defaultIcon = new PIXI.Sprite.from('images/wine.png');
+        defaultIcon.anchor.set(0.5);
+        defaultIcon.x = app.view.width / 2;
+        defaultIcon.y = app.view.height / 2;
+
+        app.stage.addChild(defaultIcon);
+
+        // mouse interactions
+        app.stage.interactive = true;
+        app.stage.on('pointermove', movePlayer);
+      };
+
+      function movePlayer(e) {
+        let pos = e.data.global;
+
+        defaultIcon.x = pos.x;
+        defaultIcon.y = pos.y;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Hello wine mouse</h1>
+  </body>
+</html>
