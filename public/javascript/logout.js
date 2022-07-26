@@ -12,4 +12,4 @@ async function logout() {
 }
 
 // remember these are ids
-document.querySelector('.dropdown-item').addEventListener('click', logout);
+document.querySelector('.sign-out').addEventListener('click', logout);
