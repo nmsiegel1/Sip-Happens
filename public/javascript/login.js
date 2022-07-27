@@ -24,4 +24,7 @@ async function loginFormHandler(event) {
 }
 
 // remember these are ids
-document.querySelector('#login-form').addEventListener('submit', loginFormHandler);
+
+document.querySelector('#login-box').addEventListener('submit', loginFormHandler);
+
+

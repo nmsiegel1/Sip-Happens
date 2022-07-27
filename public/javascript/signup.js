@@ -2,13 +2,12 @@ async function signupFormHandler(event) {
   event.preventDefault();
 
   // remember these are ids
-  const email = document.querySelector('#exampleInputEmail1').value.trim();
-  const password = document
-    .querySelector('#exampleInputPassword1')
-    .value.trim();
-  const remember = document.querySelector('#exampleCheck1');
 
-  if (email && password && remember) {
+  const email = document.querySelector('.sign-up-email').value.trim();
+  const password = document.querySelector('.sign-up-password').value.trim();
+
+  if (email && password) {
+
     const response = await fetch('/api/users', {
       method: 'POST',
       body: JSON.stringify({
@@ -29,6 +28,4 @@ async function signupFormHandler(event) {
 }
 
 // remember these are ids
-document
-  .querySelector('#signup-form')
-  .addEventListener('submit', signupFormHandler);
+document.querySelector('.sign-up-form').addEventListener('submit', signupFormHandler);
