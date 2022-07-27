@@ -5,7 +5,7 @@
 
             <!-- Header -->
           <div class="head-div wine-head">
-            <h1>Chianti Classico</h1>
+            <h1>{{name}}</h1>
             <div class="upvote">
                 <h1>- pairs well with</h1>
             </div>
@@ -14,14 +14,11 @@
           <!-- Food pic & Discription -->
           <div class="food-info">
             <div class="food-pic">
-              <img src="./images/thumbnails/pizza.jpg"  alt="">
+              <img src="{{food_image}}"  alt="">
             </div>
             <div class="food-discription">
-              <h2>Pizza!</h2>
-              <p>Chianti is often cited as the ultimate pizza wine. Made predominantly from the Sangiovese grape, from vineyards grown in a hilly region of Tuscany, Chianti wines tend to be quite brisk and very dry. Aromas and flavours are fairly earthy, with tart red fruit notes, and sometimes subtle vegetal notes (tomato leaf, dried herbs). Tannins are generally only moderately firm, and quite chalky in texture.
-                <br>
-                <br>
-                Classic food and wine pairings exist for a reason! The acidity is perfectly pitched, cutting through the grease with ease. The fine tannins worked well with the pepperoni. Both wine and pizza tasted better when served together.</p>
+              <h2>{{food_pairing}}</h2>
+              <p>{{description}}</p>
             </div>
           </div>
 
@@ -38,7 +35,7 @@
               <h2>Castello della Paneretta Chianti Classico Riserva</h2>
               <button class="vavino" type="button">
                 <svg class="bi pe-none me-2 cart2" width="16" height="16">
-                  <use xlink:href="#cart" />
+                  <use xlink:href="#" />
                 </svg>Order on Vavino</button>
             </div>
           </div>
@@ -78,3 +75,7 @@
         <!-- Footer -->
         <footer class="bg-light"></footer>
       </section>
+
+      {{#if loggedIn}}
+      <script src="/javascript/comment.js"></script>
+      {{/if}}
