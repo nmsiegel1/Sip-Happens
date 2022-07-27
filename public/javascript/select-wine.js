@@ -1,6 +1,7 @@
 async function selectWineHandler(event) {
     event.preventDefault();
 
+
     const chardonnay = document.querySelector('.chardonnay');
     const pinotGrigio = document.querySelector('.pinot-grigio');
     const sauvignonBlanc = document.querySelector('sauvignon');

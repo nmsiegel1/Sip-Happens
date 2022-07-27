@@ -1,18 +1,16 @@
 <div class="comments-div">
-
-    {{#each comments}}
-            <div class="comment">
-                <div class="comment-discription bg-light">
-                    <h2>John Doe</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec euismod, nisl eget consectetur sagittis, nisl
-                        nisi consectetur nisl, euismod nisl nisi euismod nisl.
-                        Donec euismod, nisl eget consectetur sagittis, nisl
-                        nisi consectetur nisl, euismod nisl nisi euismod nisl.
-                        Donec euismod, nisl eget consectetur sagittis, nisl
-                        nisi consectetur nisl, euismod nisl nisi euismod nisl.
-                </div>
-            </div>
-    {{/each}}
+  <div class="comment">
+    {{#each this}}
+      <section>
+        <div class="comments">
+          {{user.username}}
+          on
+          {{format_date created_at}}
         </div>
+        <div class="comment-discription bg-light">
+          {{comment_text}}
+        </div>
+      </section>
+    {{/each}}
+  </div>
+</div>

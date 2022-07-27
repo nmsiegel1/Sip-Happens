@@ -1,80 +1,73 @@
 <section class="wine-rec-section">
 
-        <!-- Food Rec -->
-        <div class="rec-food-container">
+  <!-- Food Rec -->
+  <div class="rec-food-container">
 
-            <!-- Header -->
-          <div class="head-div wine-head">
-            <h1>Chianti Classico</h1>
-            <div class="upvote">
-                <h1>- pairs well with</h1>
-            </div>
-          </div>
+      <!-- Header -->
+    <div class="head-div wine-head">
+      <h1>{{name}}</h1>
+      <div class="upvote">
+          <h1>- pairs well with</h1>
+      </div>
+    </div>
 
-          <!-- Food pic & Discription -->
-          <div class="food-info">
-            <div class="food-pic">
-              <img src="./images/thumbnails/pizza.jpg"  alt="">
-            </div>
-            <div class="food-discription">
-              <h2>Pizza!</h2>
-              <p>Chianti is often cited as the ultimate pizza wine. Made predominantly from the Sangiovese grape, from vineyards grown in a hilly region of Tuscany, Chianti wines tend to be quite brisk and very dry. Aromas and flavours are fairly earthy, with tart red fruit notes, and sometimes subtle vegetal notes (tomato leaf, dried herbs). Tannins are generally only moderately firm, and quite chalky in texture.
-                <br>
-                <br>
-                Classic food and wine pairings exist for a reason! The acidity is perfectly pitched, cutting through the grease with ease. The fine tannins worked well with the pepperoni. Both wine and pizza tasted better when served together.</p>
-            </div>
-          </div>
+    <!-- Food pic & Discription -->
+    <div class="food-info">
+      <div class="food-pic">
+        <img src="{{food_image}}"  alt="">
+      </div>
+      <div class="food-discription">
+        <h2>{{food_pairing}}</h2>
+        <p>{{description}}</p>
+      </div>
+    </div>
 
-          <!-- Wine Rec -->
-          <div class="head-div wine-head">
-            <h1 class="wine-name">The bottle we suggest</h1>
-          </div>
+    <!-- Wine Rec -->
+    <div class="head-div wine-head">
+      <h1 class="wine-name">The bottle we suggest</h1>
+    </div>
 
-          <div class="food-info">
-            <div class="food-pic">
-              <img src="./images/chianti.webp"  alt="">
-            </div>
-            <div class="food-discription">
-              <h2>Castello della Paneretta Chianti Classico Riserva</h2>
-              <button class="vavino" type="button">
-                <svg class="bi pe-none me-2 cart2" width="16" height="16">
-                  <use xlink:href="#cart" />
-                </svg>Order on Vavino</button>
-            </div>
-          </div>
+    <div class="food-info">
+      <div class="food-pic">
+        <img src="./images/chianti.webp"  alt="">
+      </div>
+      <div class="food-discription">
+        <h2>Castello della Paneretta Chianti Classico Riserva</h2>
+        <button class="vavino" type="button">
+          <svg class="bi pe-none me-2 cart2" width="16" height="16">
+            <use xlink:href="#" />
+          </svg>Order on Vavino</button>
+      </div>
+    </div>
 
-          <!-- Comment Section -->
+    <!-- Comment Section -->
+    <div class="card w-80">
+      <div class="card-body">
         <div class="head-div wine-head">
-            <h1 class="comment-h1">Comments</h1>
+          <h1 class="comment-h1">Comments</h1>
         </div>
-        <div class="comment-input">
-            <div class="comment-input-div">
-                <input type="text" placeholder="Write a comment..." class="comment-input-text bg-light">
-                <button class="comment-input-btn" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                        <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
-                      </svg>
-                </button>
-            </div>
-        </div>
-        <div class="divider"></div>
-        <div class="comments-div">
-            <div class="comment">
-                <div class="comment-discription bg-light">
-                    <h2>John Doe</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec euismod, nisl eget consectetur sagittis, nisl
-                        nisi consectetur nisl, euismod nisl nisi euismod nisl.
-                        Donec euismod, nisl eget consectetur sagittis, nisl
-                        nisi consectetur nisl, euismod nisl nisi euismod nisl.
-                        Donec euismod, nisl eget consectetur sagittis, nisl
-                        nisi consectetur nisl, euismod nisl nisi euismod nisl.
-                </div>
-            </div>
-        </div>
-        </div>
-
+        <form class="comment-form">
+          <div class="comment-input-div">
+            <textarea name="comment-body"></textarea>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <button class="comment-input-btn" type="submit">
+              add comment
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+              <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    {{> comments post.comments}}
+  </div>
         <!-- Footer -->
-        <footer class="bg-light"></footer>
-      </section>
+  <footer class="bg-light"></footer>
+</section>
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
