@@ -1,104 +1,25 @@
-<div class="categories-body">
-        <div class="categories">
-          <div class="head-div">
-            <h1>What are you sipping?</h1>
-          </div>
+<div class="categories-body"> 
+  <div class="head-div">
+    <h1>What are you sipping?</h1>
+  </div>
 
-          {{!-- Wine Category Buttons --}}
-          <div class="cat-btn-div">
-            <div class="cat-btns">
-              <a href="">
-                <h2>Chardonnay</h2>
-                <img class="cat-img" src="/images/Kendall-Jackson-Chardonnay-3.jpg" alt="" />
-                <div class="cat-overlay cat-img"></div>
-              </a>
-            </div>
-            <div class="cat-btns margin-btn">
-              <a href="">
-                <h2>Pinot Grigio</h2>
-                <img class="cat-img" src="/images/pinot-gri.jpg" alt="" />
-                <div class="cat-overlay cat-img"></div>
-              </a>
-            </div>
-            <div class="cat-btns">
-              <a href="">
-                <h2>Sauvignon Blanc</h2>
-                <img class="cat-img" src="/images/sav-blanc.jpg" alt="" />
-                <div class="cat-overlay cat-img"></div>
-              </a>
-            </div>
-          </div>
-          <div class="cat-btn-div">
-            <div class="cat-btns">
-              <a href="">
-                <h2>Moscato</h2>
-                <img class="cat-img" src="/images/moscato.jpg" alt="" />
-                <div class="cat-overlay cat-img"></div>
-              </a>
-            </div>
-            <div class="cat-btns margin-btn">
-              <a href="">
-                <h2>Prosecco</h2>
-                <img class="cat-img" src="/images/prosecco.jpeg" alt="" />
-                <div class="cat-overlay cat-img"></div>
-              </a>
-            </div>
-            <div class="cat-btns">
-              <a href="">
-                <h2>Chenin Blanc</h2>
-                <img class="cat-img" src="/images/chen-blanc.jpg" alt="" />
-                <div class="cat-overlay cat-img"></div>
-              </a>
-            </div>
-          </div>
-          <div class="cat-btn-div">
-            <div class="cat-btns">
-              <a href="">
-                <h2>Rosé</h2>
-                <img class="cat-img" src="/images/rose.webp" alt="" />
-                <div class="cat-overlay cat-img"></div>
-              </a>
-            </div>
-            <div class="cat-btns margin-btn">
-              <a href="">
-                <h2>Chianti Classico</h2>
-                <img class="cat-img" src="/images/chianti.jpg" alt="" />
-                <div class="cat-overlay cat-img"></div>
-              </a>
-            </div>
-            <div class="cat-btns">
-              <a href="">
-                <h2>Pinot Noir</h2>
-                <img class="cat-img" src="/images/pinot-no.webp" alt="" />
-                <div class="cat-overlay cat-img"></div>
-              </a>
-            </div>
-          </div>
-          <div class="cat-btn-div">
-            <div class="cat-btns">
-              <a href="">
-                <h2>Cabernet Savigon</h2>
-                <img class="cat-img" src="/images/cab-sav.jpg" alt="" />
-                <div class="cat-overlay cat-img"></div>
-              </a>
-            </div>
-            <div class="cat-btns margin-btn">
-              <a href="">
-                <h2>Malbec</h2>
-                <img class="cat-img" src="/images/malbec.webp" alt="" />
-                <div class="cat-overlay cat-img"></div>
-              </a>
-            </div>
-            <div class="cat-btns">
-              <a href="">
-                <h2>Merlot</h2>
-                <img class="cat-img" src="/images/merlot.jpeg" alt="" />
-                <div class="cat-overlay cat-img"></div>
-              </a>
-            </div>
-          </div>
-        </div>
+  <!-- If the user is logged in, render the categories content -->
+ {{!-- {{#if loggedIn}} --}}
+ 
+            {{!-- Wine Category Buttons --}}
+    <section class="cat-btns">
+      <div class="painting-details">
+        {{#each categories.wine as |wineRec|}}
+        {{> pairing-details}}
+        {{/each}}
+      </div>
+    </section>
+
+  <!-- Otherwise, provide a link to login -->
+  {{!-- {{else}}
+  <a href="/login">You must login first to view this painting</a>
+  {{/if}} --}}
+</div>
 
         {{!-- Footer --}}
         <footer class="bg-light"></footer>
-      </div>
