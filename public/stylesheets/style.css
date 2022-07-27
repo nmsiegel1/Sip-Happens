@@ -1,19 +1,17 @@
-
-
 .flex-column {
-    height: 100vh;
+  height: 100vh;
 }
 
 .sidebar-shadow {
-    outline: rgb(230, 230, 230) solid 1px;
-    position: fixed;
-    background-image: url(../public/images/vineyard.png);
-    z-index: 999;
+  outline: rgb(230, 230, 230) solid 1px;
+  position: fixed;
+  background-image: url(../images/vineyard.png);
+  z-index: 999;
 }
 
 .logo {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .svg-color {
@@ -26,403 +24,420 @@
 }
 
 .nav-link {
-    margin-top: 5px;
-    transition: opacity 200ms ease;
+  margin-top: 5px;
+  transition: opacity 200ms ease;
 }
 
 .nav-link:hover {
-    opacity: 90%;
+  opacity: 90%;
 }
 
 hr {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .hero {
-    width: 100%;
-    margin-left: 280px;
+  width: 100%;
+  margin-left: 280px;
 }
 
 .hero h1 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .hero-head {
-    font-weight: 300;
-    color: #fff;
-    padding: 30px;
-    padding-bottom: 220px;
-    padding-top: 20px;
-    position: relative;
-    background-image:linear-gradient(0.25turn, rgba(51, 25, 25, 0.829), rgba(17, 17, 17, 0.829)), url('../public/images/head.webp');
-    background-size: cover;
-    background-position: 40% 20%;
-    border-radius: 0 0 20px 20px;
+  font-weight: 300;
+  color: #fff;
+  padding: 30px;
+  padding-bottom: 220px;
+  padding-top: 20px;
+  position: relative;
+  background-image: linear-gradient(
+      0.25turn,
+      rgba(51, 25, 25, 0.829),
+      rgba(17, 17, 17, 0.829)
+    ),
+    url('../images/head.webp');
+  background-size: cover;
+  background-position: 40% 20%;
+  border-radius: 0 0 20px 20px;
 }
 
 .feat-selections {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin: 40px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: 40px;
 }
 
 .feat-selections:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .hover-gs:hover {
-    filter: grayscale(100%);
-    transition: filter 400ms ease;
+  filter: grayscale(100%);
+  transition: filter 400ms ease;
 }
 
 .feat-selections h2 {
-    font-weight: 400;
-    color: #fff;
-    text-shadow: #333 10px 0px 30px;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: #333 10px 0px 30px;
 }
 
 .feat-btn-lft {
-    width: 50%;
-    height: 350px;
-    margin-right: 20px;
-    border-right: 0;
-    border-radius: 20px;
+  width: 50%;
+  height: 350px;
+  margin-right: 20px;
+  border-right: 0;
+  border-radius: 20px;
 }
 
 .feat-btn-rt {
-    width: 50%;
-    height: 350px;
-    margin-left: 20px;
-    border-radius: 20px;
+  width: 50%;
+  height: 350px;
+  margin-left: 20px;
+  border-radius: 20px;
 }
 
 .feat-img-1 {
-    background-image: linear-gradient(rgba(17, 17, 17, 0.829), rgba(211, 128, 128, 0.445)),
-     url('../public/images/pizza.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.829),
+      rgba(211, 128, 128, 0.445)
+    ),
+    url('../images/pizza.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .feat-img-2 {
-    background-image:  linear-gradient(rgba(17, 17, 17, 0.829), rgba(211, 128, 128, 0.445)),
-     url('../public/images/seafood.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.829),
+      rgba(211, 128, 128, 0.445)
+    ),
+    url('../images/seafood.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .feat-img-3 {
-    background-image:  linear-gradient(rgba(17, 17, 17, 0.829), rgba(211, 128, 128, 0.445)),
-     url('../public/images/La-Marca-Prosecco-5.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.829),
+      rgba(211, 128, 128, 0.445)
+    ),
+    url('../images/La-Marca-Prosecco-5.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .feat-img-4 {
-    background-image:  linear-gradient(rgba(17, 17, 17, 0.829), rgba(211, 128, 128, 0.445)),
-     url('../public/images/salad.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.829),
+      rgba(211, 128, 128, 0.445)
+    ),
+    url('../images/salad.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 footer {
-    height: 30vh;
-    width: 100%;
-    background-image: url(../public/images/footer-bg.jpg);
-    border-top: rgb(230, 230, 230) solid 1px;
-    background-position: center;
+  height: 30vh;
+  width: 100%;
+  background-image: url(../images/footer-bg.jpg);
+  border-top: rgb(230, 230, 230) solid 1px;
+  background-position: center;
 }
 
 .cart {
-    fill:rgb(130, 39, 39);
+  fill: rgb(130, 39, 39);
 }
 
 .sec-btn {
-    background-color: rgb(235, 235, 235) !important;
-    margin-bottom: 5px;
+  background-color: rgb(235, 235, 235) !important;
+  margin-bottom: 5px;
 }
 
 /* Categories Page */
 
 .categories-body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .categories {
-    padding: 30px;
-    padding-top: 40px;
-    height: auto;
-    margin-left: 280px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px !important;
+  padding: 30px;
+  padding-top: 40px;
+  height: auto;
+  margin-left: 280px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px !important;
 }
 
 .categories h1 {
-    font-weight: 600;
-    margin-bottom: 30px;
-    border-bottom: rgba(135, 135, 135, 0.219) solid 1px;
-    padding-bottom: 20px;
-    color: #333;
+  font-weight: 600;
+  margin-bottom: 30px;
+  border-bottom: rgba(135, 135, 135, 0.219) solid 1px;
+  padding-bottom: 20px;
+  color: #333;
 }
 
 .cat-btns {
-    height: 250px;
-    width: 33%;
-    padding: 20px;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    border: rgba(135, 135, 135, 0.745) solid 1px;
+  height: 250px;
+  width: 33%;
+  padding: 20px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: rgba(135, 135, 135, 0.745) solid 1px;
 }
 
 .cat-btns h2 {
-    position: relative;
-    z-index: 999;
-    font-weight: 600;
-    color: #fff;
-    text-shadow: #333 10px 0px 30px;
+  position: relative;
+  z-index: 999;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: #333 10px 0px 30px;
 }
 
 .cat-btns a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .cat-btn-div {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .margin-btn {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .cat-img {
-    position: absolute;
-    height: 100%;
-    object-fit: cover;
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    width: 100%;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
 }
 
 .cat-img:hover {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .cat-overlay {
-    background: linear-gradient(#333, rgba(46, 9, 9, 0.541));
-    opacity: 60%;
-    transition: 300ms ease;
+  background: linear-gradient(#333, rgba(46, 9, 9, 0.541));
+  opacity: 60%;
+  transition: 300ms ease;
 }
 
 .cat-overlay:hover {
-    background-color: #000;
-    opacity: 80%;
+  background-color: #000;
+  opacity: 80%;
 }
 
 .active {
-    background-color: rgb(130, 39, 39) !important;
+  background-color: rgb(130, 39, 39) !important;
 }
 
 /* Recomendations */
 
 .rec-food-container {
-    margin-left: 280px;
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    position: relative;
-    padding: 20px;
-    padding-right: 50px;
+  margin-left: 280px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  position: relative;
+  padding: 20px;
+  padding-right: 50px;
 }
 
 .wine-rec-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
 }
 
 .wine-head {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .upvote {
-    padding-left: 10px;
-    display: flex;
-    flex-direction: row;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .upvote h1 {
-    font-weight: 200;
-    color: rgb(105, 105, 105);
+  font-weight: 200;
+  color: rgb(105, 105, 105);
 }
 
 .food-info {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-top: 20px;
 }
 
 .food-pic {
-    width: 50%;
-    height: 450px;
-    object-fit: cover;
-    overflow: hidden;
-    margin-right: 35px;
-    position: relative;
-    border-radius: 20px;
+  width: 50%;
+  height: 450px;
+  object-fit: cover;
+  overflow: hidden;
+  margin-right: 35px;
+  position: relative;
+  border-radius: 20px;
 }
 
 .food-pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .food-discription {
-    width: 50%;
-    height: auto;
-    position: relative;
+  width: 50%;
+  height: auto;
+  position: relative;
 }
 
 .food-discription h2 {
-    font-size: 45px
+  font-size: 45px;
 }
 
 .food-discription p {
-    margin-top: 20px;
-    font-size: 18px;
+  margin-top: 20px;
+  font-size: 18px;
 }
 
 .footer-contain {
-    width: 100%;
-    margin-left: 281px;
+  width: 100%;
+  margin-left: 281px;
 }
 
 .wine-name {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 .vavino {
-    margin-top: 30px;
-    padding: 8px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: 0;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 300;
-    color: white;
-    background-color: rgb(130, 39, 39);
+  margin-top: 30px;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  background-color: rgb(130, 39, 39);
 }
 
 .cart2 {
-    fill: white !important;
-    margin-right: 5px;
-    margin-bottom: 5px;
+  fill: white !important;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .comment-discription {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-radius: 20px;
-    margin-bottom: 50px;
-    margin-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  margin-top: 15px;
 }
 
 .comment-discription p {
-    padding-top: 10px;
-    font-size: 18px;
+  padding-top: 10px;
+  font-size: 18px;
 }
 
 .comment-h1 {
-    margin-top: 100px;
-    margin-bottom: 20px;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 .comment-input-text {
-    border: 0;
-    padding: 10px;
-    padding-left: 25px;
-    border-radius: 10px;
-    width: 100%;
+  border: 0;
+  padding: 10px;
+  padding-left: 25px;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .comment-input-text:focus {
-    outline: rgb(230, 230, 230) solid 1px;
+  outline: rgb(230, 230, 230) solid 1px;
 }
 
 .comment-input-div {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .comment-input-btn {
-    background-color: rgb(130, 39, 39);
-    border: 0;
-    border-radius: 10px;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    color: white;
-    font-weight: 600;
-    font-size: 20px;
-    cursor: pointer;
-    margin-left: 10px;
-    transition: background-color 200ms ease;
+  background-color: rgb(130, 39, 39);
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 200ms ease;
 }
 
 .comment-input-btn:hover {
-    background-color: #333;
+  background-color: #333;
 }
 
 .divider {
-    margin: 10px;
-    border-bottom: rgb(230, 230, 230) solid 1px;
+  margin: 10px;
+  border-bottom: rgb(230, 230, 230) solid 1px;
 }
 
 /* login */
 
 .login-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    position: relative;
-    width: 100%;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 .login-div {
-    border: rgb(230, 230, 230) solid 1px;
-    padding: 30px;
-    margin: 50px;
-    width: 50vw;
+  border: rgb(230, 230, 230) solid 1px;
+  padding: 30px;
+  margin: 50px;
+  width: 50vw;
 }
 
 .login-box button {
-    margin-top: 10px;
-    background-color: rgb(130, 39, 39);
-    color: #fff;
+  margin-top: 10px;
+  background-color: rgb(130, 39, 39);
+  color: #fff;
 }
 
 /* Upvote */
