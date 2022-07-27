@@ -38,7 +38,10 @@ router.get('/', (req, res) => {
       },
     ],
   })
-    .then((dbWineData) => res.json(dbWineData))
+    .then((dbWineData) => {
+      const wines = dbWineData.map((wine) => wine.get({ plain: true }));
+      res.render('recommendations', { wines, loggedIn: req.session.loggedIn });
+    })
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
@@ -84,11 +87,12 @@ router.get('/:id', (req, res) => {
     ],
   })
     .then((dbWineData) => {
+      const wines = dbWineData.map((wine) => wine.get({ plain: true }));
+      res.render('categories', { wines, loggedIn: req.session.loggedIn });
       if (!dbWineData) {
         res.status(404).json({ message: 'No wine found with this id' });
         return;
       }
-      res.json(dbWineData);
     })
     .catch((err) => {
       console.log(err);

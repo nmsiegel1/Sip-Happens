@@ -2,6 +2,11 @@ const router = require('express').Router();
 const { User, Wine, Comment, Vote } = require('../models');
 const sequelize = require('../config/connection');
 
+// GET featured wines
+router.get('/', (req, res) => {
+  res.render('featured');
+});
+
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
@@ -57,7 +62,7 @@ router.get('/wine/:id', (req, res) => {
       const wine = dbWineData.get({ plain: true });
 
       // pass data to template
-      res.render('single-wine', { wine, loggedIn: req.session.loggedIn });
+      res.render('wineRec', { wine, loggedIn: req.session.loggedIn });
     })
     .catch((err) => {
       console.log(err);

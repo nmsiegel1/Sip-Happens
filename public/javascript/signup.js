@@ -3,7 +3,9 @@ async function signupFormHandler(event) {
 
   // remember these are ids
   const email = document.querySelector('#exampleInputEmail1').value.trim();
-  const password = document.querySelector('#exampleInputPassword1').value.trim();
+  const password = document
+    .querySelector('#exampleInputPassword1')
+    .value.trim();
   const remember = document.querySelector('#exampleCheck1');
 
   if (email && password && remember) {
@@ -18,7 +20,8 @@ async function signupFormHandler(event) {
     });
 
     if (response.ok) {
-      document.location.replace('/dashboard/');
+      // we don't have a dashboard so it will just go to the pairings
+      document.location.replace('/pairings');
     } else {
       alert(response.statusText);
     }
@@ -26,4 +29,6 @@ async function signupFormHandler(event) {
 }
 
 // remember these are ids
-document.querySelector('#login-form').addEventListener('submit', signupFormHandler);
+document
+  .querySelector('#signup-form')
+  .addEventListener('submit', signupFormHandler);
