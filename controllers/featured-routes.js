@@ -2,6 +2,11 @@ const router = require('express').Router();
 const { User, Wine, Comment, Vote } = require('../models');
 const sequelize = require('../config/connection');
 
+// GET featured wines
+router.get('/', (req, res) => {
+  res.render('featured');
+});
+
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
