@@ -1,10 +1,16 @@
 <div class="comments-div">
-
-            <div class="comment">
-                <div class="comment-discription bg-light">
-                    <h2>{{user.username}}</h2>
-                    <p>
-                        {{comment.comment_text}}
-                </div>
-            </div>
+  <div class="comment">
+    {{#each this}}
+      <section>
+        <div class="comments">
+          {{user.username}}
+          on
+          {{format_date created_at}}
         </div>
+        <div class="comment-discription bg-light">
+          {{comment_text}}
+        </div>
+      </section>
+    {{/each}}
+  </div>
+</div>
