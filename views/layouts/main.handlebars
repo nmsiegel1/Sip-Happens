@@ -57,9 +57,8 @@
       >
         <a
           href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
         >
-          <span class="fs-4">SIP HAPPENS</span>
+          <img class="logo" src="./public/images/SipHappensLogo.png" alt="Sip Happens Logo" />
         </a>
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
@@ -70,7 +69,7 @@
               aria-current="page"
             >
               <svg class="svg-color bi pe-none me-2" width="16" height="16">
-                <use xlink:href="#home" />
+                <use xlink:href="#/" />
               </svg>
               Home
             </a>
@@ -78,7 +77,7 @@
           <li>
             <a href="#" class="nav-link link-dark sec-btn">
               <svg class="bi pe-none me-2" width="16" height="16">
-                <use xlink:href="#grid" />
+                <use xlink:href="#categories" />
               </svg>
               Wines
             </a>
@@ -86,7 +85,7 @@
           <li>
             <a href="#" class="nav-link link-dark sec-btn">
               <svg class="bi pe-none me-2 cart" width="16" height="16">
-                <use xlink:href="#cart" />
+                <use xlink:href="#https://www.vivino.com/" />
               </svg>
               Vavino
             </a>
@@ -103,24 +102,20 @@
             aria-expanded="false"
           >
               <img
-              src="./public/images/profile-placeholder.png"
+              src="../images/profile-placeholder.png"
               alt=""
               width="32"
               height="32"
               class="rounded-circle me-2"
             />
-            <strong>username</strong>
+            <strong>{{user.username}}</strong>
           </a>
           <ul class="dropdown-menu text-small shadow">
             <li><a class="dropdown-item" id="sign-out" href="#">Sign out</a></li>
           </ul>
         </div>
       </div>
-      {{ content }}
+      {{{body}}}
     </body>
   </main>
-
-  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script src="sidebars.js"></script>
 </html>
