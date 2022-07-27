@@ -6,16 +6,21 @@ const app = new Application({
 
 document.body.appendChild(app.view);
 
+// mouse cursur change
 const defaultIcon = "url('images/wine.png'),auto";
 const hoverIcon = "url('images/wine_trippy.png),auto";
 
 app.renderer.plugins.interaction.cursorStyles.default = defaultIcon;
 app.renderer.plugins.interaction.cursorStyles.hover = hoverIcon;
 
+// droplits feature
+
+// loads bacground image
 const loader = PIXI.Loader.shared;
 loader.add('backgroundImage', './images/backgroundWine.jpg').load(setup);
 
 function setup(loader, resources) {
+  //places background image
   const backgroundImage = PIXI.Sprite.from(resources.backgroundImage.texture);
   backgroundImage.anchor.set(0.5);
   backgroundImage.x = app.renderer.width / 2;
@@ -25,6 +30,7 @@ function setup(loader, resources) {
   container.addChild(backgroundImage);
   app.stage.addChild(container);
 
+  // text on the page
   const style = new PIXI.TextStyle({
     fontFamily: 'Segoe UI',
     fontSize: 20 + window.innerWidth * 0.06,
@@ -36,6 +42,7 @@ function setup(loader, resources) {
     dropShadowColor: '#000000',
   });
 
+  // adjusts size of text when window size changes
   window.addEventListener('resize', function () {
     style.fontSize = 20 + window.innerWidth * 0.06;
   });
@@ -47,6 +54,7 @@ function setup(loader, resources) {
   myText.x = app.screen.width / 2;
   myText.y = app.screen.height / 2;
 
+  // displacement image overlay
   const displacementSprite = PIXI.Sprite.from(
     './images/displacedBackground.jpeg'
   );
@@ -60,6 +68,7 @@ function setup(loader, resources) {
   container.addChild(displacementSprite);
   container.filters = [displacementFilter];
 
+  // shockwave ripple effects
   const options1 = {
     amplitude: 40, //300 default value
     wavelength: 30, //160 default value
@@ -106,6 +115,7 @@ function setup(loader, resources) {
     shockwaveFilter4,
   ];
 
+  // mouse movement listener
   let x, y;
   window.addEventListener('mousemove', function (e) {
     x = e.screenX;
