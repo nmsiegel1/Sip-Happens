@@ -1,17 +1,34 @@
-{{!-- painting --}}
+{{! painting }}
+{{>single-wine-details wine}}
 
-{{#if loggedIn}}
-<section class="cat-btn-div" >
-<div class="cat-btns">
-    <div class="cat-img"> 
-        <img src="/images/{{wine.wine_image}}" alt="{{wine.name}}">
-    </div>
-    <div>
-        <h3 class="wine-name">{{wine.type}}</h3>
+{{!-- {{#if loggedIn}}
+  <section class='cat-btn-div'>
+    <div class='cat-btns'>
+      <div class='cat-img'>
+        <img src='/images/{{wine.wine_image}}' alt='{{wine.name}}' />
+      </div>
+      <div>
+        <h3 class='wine-name'>{{wine.type}}</h3>
         <p>Name: {{wine_name}}</p>
+      </div>
     </div>
 </div>
-</section>
+</section> --}}
+{{#if loggedIn}}
+  <div class="card w-80 p-2">
+    <div class="card-body">
+      <form class="comment-description comment-form">
+        <div class="comment-input-div">
+          <textarea class="comment-input-text" name="comment-body"></textarea>
+        </div>
+        <div>
+          <button class="comment-input-btn" type="submit">add comment</button>
+          <button type="button" class="upvote-btn">upvote</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
 
 <!-- Otherwise, provide a link to login -->
 {{else}}
@@ -31,4 +48,9 @@
         </div>
     </div>
 </div>
+{{/if}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/upvote.js"></script>
 {{/if}}

@@ -7,7 +7,7 @@ async function upvoteClickHandler(event) {
   const response = await fetch('/api/wine/upvote', {
     method: 'PUT',
     body: JSON.stringify({
-      post_id: id,
+      wine_id: id,
     }),
     headers: {
       'Content-Type': 'application/json',
