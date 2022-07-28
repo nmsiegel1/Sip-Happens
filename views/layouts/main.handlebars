@@ -73,7 +73,7 @@
               aria-current='page'
             >
               <svg class='svg-color bi pe-none me-2' width='16' height='16'>
-                <use xlink:href='#/'></use>
+                <use xlink:href='#home'></use>
               </svg>
               Home
             </a>
@@ -81,7 +81,7 @@
           <li>
             <a href='/api/wine' class='nav-link link-dark sec-btn'>
               <svg class='bi pe-none me-2' width='16' height='16'>
-                <use xlink:href='#categories'></use>
+                <use xlink:href='#grid'></use>
               </svg>
               Wines
             </a>
@@ -93,9 +93,9 @@
               class='nav-link link-dark sec-btn'
             >
               <svg class='bi pe-none me-2 cart' width='16' height='16'>
-                <use xlink:href='#https://www.vivino.com/'></use>
+                <use xlink:href='#cart'></use>
               </svg>
-              Vavino
+              Vivino
             </a>
           </li>
         </ul>
@@ -119,15 +119,12 @@
             <strong>{{username}}</strong>
           </a>
           <ul class='dropdown-menu text-small shadow'>
-            {{#if loggedIn}}
               <li><a class='dropdown-item' id='logout' href='#'>Logout</a></li>
-            {{else}}
               <li><a
                   class='dropdown-item'
                   id='login'
                   href='/login'
                 >Login</a></li>
-            {{/if}}
           </ul>
         </div>
 

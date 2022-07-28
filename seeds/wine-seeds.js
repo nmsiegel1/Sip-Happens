@@ -25,7 +25,7 @@ const wineData = [
       'https://s23209.pcdn.co/wp-content/uploads/2014/10/Roasted-VegetablesIMG_0409-1200x1200-cropped.jpg',
     food_pairing: 'Vegetables',
     wine_image:
-      '02-pinot-gri.jpg',
+      './images/02-pinot-gri.jpg',
     wine_url:
       'https://www.vivino.com/US-NC/en/santa-margherita-pinot-grigio-valdadige/w/1184502',
   },
