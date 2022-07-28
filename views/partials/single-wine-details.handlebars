@@ -1,5 +1,84 @@
 {{!-- wine pairing --}}
-<section class="card">
+<section class="wine-rec-section">
+
+        <!-- Food Rec -->
+        <div class="rec-food-container">
+
+            <!-- Header -->
+          <div class="head-div wine-head">
+            <h1>{{type}}</h1>
+            <div class="upvote">
+                <h1>- pairs well with</h1>
+            </div>
+          </div>
+
+          <!-- Food pic & Discription -->
+          <div class="food-info">
+            <div class="food-pic">
+              <img src="/images/{{wine_image}}" alt="{{name}}">
+            </div>
+            <div class="food-discription">
+              <h2>{{food_pairing}}</h2>
+              <p>{{description}}</p>
+            </div>
+          </div>
+
+          <!-- Wine Rec -->
+          <div class="head-div wine-head">
+            <h1 class="wine-name">The bottle we suggest</h1>
+          </div>
+
+          <div class="food-info">
+            <div class="food-pic">
+              <img src="./images/chianti.webp"  alt="">
+            </div>
+            <div class="food-discription">
+              <h2>{{name}}</h2>
+              <a href="{{wine_url}}" class="vavino" type="button" target="_blank">
+                <svg class="bi pe-none me-2 cart2" width="16" height="16">
+                  <use xlink:href="#cart" />
+                </svg>
+                <txt>Order on Vavino</txt>
+                </a>
+            </div>
+          </div>
+
+          <!-- Comment Section -->
+        <div class="head-div wine-head">
+            <h1 class="comment-h1">Comments</h1>
+        </div>
+        <div class="comment-input">
+            <div class="comment-input-div">
+                <input type="text" placeholder="Write a comment..." class="comment-input-text bg-light">
+                <button class="comment-input-btn" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                        <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+                      </svg>
+                </button>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="comments-div">
+            <div class="comment">
+                <div class="comment-discription bg-light">
+                    <h2>John Doe</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec euismod, nisl eget consectetur sagittis, nisl
+                        nisi consectetur nisl, euismod nisl nisi euismod nisl.
+                        Donec euismod, nisl eget consectetur sagittis, nisl
+                        nisi consectetur nisl, euismod nisl nisi euismod nisl.
+                        Donec euismod, nisl eget consectetur sagittis, nisl
+                        nisi consectetur nisl, euismod nisl nisi euismod nisl.
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+
+{{!-- _______________ --}}
+
+{{!-- <section class="card">
   <a href="/wine/{{id}}">
     <header>{{type}}</header>
 
@@ -10,7 +89,7 @@
       <p> For more information about the {{name}} go to: {{wine_url}}</p>
     </div>
   </a>
-</section>
+</section> --}}
 
 {{!-- comment section --}}
 <div class="comments-div">
