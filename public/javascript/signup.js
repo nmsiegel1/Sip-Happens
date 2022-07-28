@@ -3,10 +3,11 @@ async function signupFormHandler(event) {
 
   // remember these are ids
 
-  const email = document.querySelector('.sign-up-email').value.trim();
-  const password = document.querySelector('.sign-up-password').value.trim();
+  const email = document.querySelector('#signup-email').value.trim();
+  const password = document.querySelector('#signup-password').value.trim();
+  const username = document.querySelector('#signup-username').value.trim();
 
-  if (email && password) {
+  if (username && email && password) {
     const response = await fetch('/api/users', {
       method: 'POST',
       body: JSON.stringify({
@@ -18,6 +19,7 @@ async function signupFormHandler(event) {
     });
 
     if (response.ok) {
+      // we don't have a dashboard so it will just go to the pairings
       document.location.replace('/featured');
     } else {
       alert(response.statusText);
@@ -27,5 +29,5 @@ async function signupFormHandler(event) {
 
 // remember these are ids
 document
-  .querySelector('.sign-up-form')
+  .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);

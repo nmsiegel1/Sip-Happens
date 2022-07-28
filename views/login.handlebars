@@ -8,13 +8,13 @@
                 <h3>Login</h3>
                 </div>
                 <div class="login-box-body">
-                <form>
+                <form class="login-form">
                     <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
+                    <label for="login-email">Email address</label>
                     <input
                         type="email"
                         class="form-control"
-                        id="exampleInputEmail1"
+                        id="login-email"
                         aria-describedby="emailHelp"
                         placeholder="Enter email"
                     />
@@ -23,11 +23,11 @@
                     </small>
                     </div>
                     <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
+                    <label for="login-password">Password</label>
                     <input
                         type="password"
                         class="form-control"
-                        id="exampleInputPassword1"
+                        id="login-password"
                         placeholder="Password"
                     />
                     </div>
@@ -50,31 +50,39 @@
                   <h3>Sign-up</h3>
                   </div>
                   <div class="login-box-body">
-                  <form>
-                      <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
+                  <form class="signup-form">
+                    <div class="form-group">
+                        <label for="signup-username">username:</label>
+                        <input type="text"
+                          class="form-control"
+                          id="signup-username"
+                          aria-describedby="usernameHelp"
+                          placeholder="Enter username"  />
+                    </div>
+                    <div class="form-group">
+                      <label for="signup-email">Email address</label>
                       <input
                           type="email"
                           class="form-control"
-                          id="exampleInputEmail1"
+                          id="signup-email"
                           aria-describedby="emailHelp"
                           placeholder="Enter email"
                       />
                       <small id="emailHelp" class="form-text text-muted">
                           We'll never share your email with anyone else.
                       </small>
-                      </div>
-                      <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
+                    </div>
+                    <div class="form-group">
+                      <label for="signup-password">Password</label>
                       <input
                           type="password"
                           class="form-control"
-                          id="exampleInputPassword1"
+                          id="signup-password"
                           placeholder="Password"
                       />
                       </div>
-                      <div class="form-group form-check">
-                      </div>
+                    <div class="form-group form-check">
+                    </div>
                       <button type="submit" class="btn btn-primary">
                       Submit
                       </button>
@@ -89,5 +97,8 @@
     </body>
   </main>
 
+  {{!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> --}}
+
   <script src="/javascript/login.js"></script>
+  <script src="/javascript/signup.js"></script>
 </html>
