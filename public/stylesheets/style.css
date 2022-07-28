@@ -489,5 +489,5 @@ canvas {
   top: 10%;
   transform: translate(-50%, -50%);
   object-fit: cover;
-  opacity: 1;
+  opacity: 0;
 }
