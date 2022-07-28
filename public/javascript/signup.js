@@ -1,8 +1,6 @@
 async function signupFormHandler(event) {
   event.preventDefault();
 
-  // remember these are ids
-
   const email = document.querySelector('#signup-email').value.trim();
   const password = document.querySelector('#signup-password').value.trim();
   const username = document.querySelector('#signup-username').value.trim();
@@ -20,7 +18,7 @@ async function signupFormHandler(event) {
 
     if (response.ok) {
       // we don't have a dashboard so it will just go to the pairings
-      document.location.replace('/featured');
+      document.location.replace('/');
     } else {
       alert(response.statusText);
     }
