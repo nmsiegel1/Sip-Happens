@@ -134,12 +134,28 @@
       </div>
 
       {{{body}}}
-      {{#if loggedIn}}
-        <script src='/javascript/logout.js'></script>
-      {{/if}}
 
     </body>
   </main>
+  <footer class='text-center mb-2 mt-2'>
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class="col"></div>
+        <div class="col"></div>
+        <img
+          src='/images/sprites/cheese.png'
+          alt='cheese'
+          class='col-sm footer-img'
+        />
+        <p class='col-sm'>Sip Back and Relax!</p>
+        <img src='/images/sprites/wine-bottle.png' class='col-sm footer-img' />
+        <div class="col"
+      </div>
+    </div>
+  </footer>
+  {{#if loggedIn}}
+    <script src='/javascript/logout.js'></script>
+  {{/if}}
 </html>
 
-<script src='./javascript/pixi.js'></script>
+{{! <script src='./javascript/pixi.js'></script> }}

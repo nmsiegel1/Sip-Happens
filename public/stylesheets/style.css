@@ -54,7 +54,7 @@ hr {
   font-weight: 300;
   color: #fff;
   padding: 30px;
-  padding-bottom: 220px;
+  /* padding-bottom: 220px; */
   padding-top: 20px;
   position: relative;
   background-image: linear-gradient(
@@ -63,7 +63,7 @@ hr {
       rgba(17, 17, 17, 0.829)
     ),
     url('../images/head.webp');
-  background-size: cover;
+  /* background-size: cover; */
   background-position: 40% 20%;
   border-radius: 0 0 20px 20px;
 }
@@ -151,6 +151,16 @@ footer {
   background-image: url('../images/footer-bg.jpg');
   border-top: rgb(230, 230, 230) solid 1px;
   background-position: center;
+}
+
+footer p {
+  font-size: x-large;
+  color: gray;
+  padding-top: 30px;
+}
+
+.footer-img {
+  height: 120px;
 }
 
 .cart {
