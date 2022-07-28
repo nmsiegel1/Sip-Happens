@@ -1,18 +1,17 @@
 async function upvoteClickHandler(event) {
-
   event.preventDefault();
 
   const id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
   ];
-  const response = await fetch('/api/posts/upvote', {
+  const response = await fetch('/api/wine/upvote', {
     method: 'PUT',
     body: JSON.stringify({
-      post_id: id
+      post_id: id,
     }),
     headers: {
-      'Content-Type': 'application/json'
-    }
+      'Content-Type': 'application/json',
+    },
   });
 
   if (response.ok) {
@@ -22,4 +21,6 @@ async function upvoteClickHandler(event) {
   }
 }
 
-document.querySelector('.upvote-btn').addEventListener('click', upvoteClickHandler);
+document
+  .querySelector('.upvote-btn')
+  .addEventListener('click', upvoteClickHandler);

@@ -1,4 +1,6 @@
 {{!-- painting --}}
+
+{{#if loggedIn}}
 <section class="cat-btn-div" >
 <div class="cat-btns">
     <div class="cat-img"> 
@@ -7,7 +9,10 @@
     <div>
         <h3 class="wine-name">{{wine.type}}</h3>
         <p>Name: {{wine_name}}</p>
-        <p>Our Recommendation: ADD LINK TO REC PAGE</p>
     </div>
 </div>
 </section>
+<!-- Otherwise, provide a link to login -->
+{{else}}
+<a href="/login">You must login first to view this painting</a>
+{{/if}}
