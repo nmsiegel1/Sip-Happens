@@ -1,8 +1,8 @@
 {{! painting }}
 {{>single-wine-details wine}}
 
-{{#if loggedIn}}
-  {{!-- <section class='cat-btn-div'>
+{{!-- {{#if loggedIn}}
+  <section class='cat-btn-div'>
     <div class='cat-btns'>
       <div class='cat-img'>
         <img src='/images/{{wine.wine_image}}' alt='{{wine.name}}' />
@@ -12,20 +12,42 @@
         <p>Name: {{wine_name}}</p>
       </div>
     </div>
-  </section> --}}
-    <form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
+</div>
+</section> --}}
+{{#if loggedIn}}
+  <div class="card w-80 p-2">
+    <div class="card-body">
+      <form class="comment-description comment-form">
+        <div class="comment-input-div">
+          <textarea class="comment-input-text" name="comment-body"></textarea>
+        </div>
+        <div>
+          <button class="comment-input-btn" type="submit">add comment</button>
+          <button type="button" class="upvote-btn">upvote</button>
+        </div>
+      </form>
+    </div>
   </div>
 
-  <div>
-    <button type="submit">add comment</button>
-    <button type="button" class="upvote-btn">upvote</button>
-  </div>
-</form>
-  <!-- Otherwise, provide a link to login -->
+
+<!-- Otherwise, provide a link to login -->
 {{else}}
-  <a href='/login'>You must login first to view this wine</a>
+<div class="hero">
+    <div class="hero-container">
+        
+        <div class="feat-selections">
+            <div class="hero-head feat-btn-rt hover-gs">
+                <div class="col-lg ft-head-content">
+                    <div class="cat-img"> 
+                        <a href="/login">
+                            <h2 class="discplay-6"> You must login first to view this painting</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {{/if}}
 
 {{#if loggedIn}}
