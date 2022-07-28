@@ -146,7 +146,7 @@ hr {
 }
 
 footer {
-  height: 53vh;
+  height: 25vh;
   width: 100%;
   background-image: url('../images/footer-bg.jpg');
   border-top: rgb(230, 230, 230) solid 1px;
@@ -460,11 +460,11 @@ a {
 /* pixi mouse  */
 canvas {
   width: 100%;
-  height: 100%;
+  height: 25%;
   display: block;
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 10%;
   transform: translate(-50%, -50%);
   object-fit: cover;
   opacity: 0;
