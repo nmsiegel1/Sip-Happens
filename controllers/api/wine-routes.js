@@ -39,7 +39,9 @@ router.get('/', (req, res) => {
     ],
   })
     .then((dbWineData) => {
+      //console.log(dbWineData);
       const wines = dbWineData.map((wine) => wine.get({ plain: true }));
+      console.log(wines);
       res.render('wine-gallery', { wines, loggedIn: req.session.loggedIn });
     })
     .catch((err) => {
