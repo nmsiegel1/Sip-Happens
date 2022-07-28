@@ -95,7 +95,7 @@
               <svg class='bi pe-none me-2 cart' width='16' height='16'>
                 <use xlink:href='#https://www.vivino.com/'></use>
               </svg>
-              Vivino
+              Vavino
             </a>
           </li>
         </ul>
@@ -120,7 +120,7 @@
           </a>
           <ul class='dropdown-menu text-small shadow'>
             {{#if loggedIn}}
-              <li><a class='dropdown-item' id='logout' href='#/logout'>Logout</a></li>
+              <li><a class='dropdown-item' id='logout' href='#'>Logout</a></li>
             {{else}}
               <li><a
                   class='dropdown-item'
@@ -137,26 +137,25 @@
 
     </body>
   </main>
-
-    {{#if loggedIn}}
-    <script src='/javascript/logout.js'></script>
-  {{/if}}
   <footer class='text-center mb-2 mt-2'>
-    <div class='container-fluid mt-4'>
+    <div class='container-fluid'>
       <div class='row'>
         <div class="col"></div>
         <div class="col"></div>
         <img
           src='/images/sprites/cheese.png'
           alt='cheese'
-          class='col-sm footer-img'
+          class='footer-img'
         />
         <p class='col-sm'>Sip Back and Relax!</p>
-        <img src='/images/sprites/wine-bottle.png' class='col-sm footer-img' />
+        <img src='/images/sprites/wine-bottle.png' class='footer-img' />
         <div class="col"
       </div>
     </div>
   </footer>
+  {{#if loggedIn}}
+    <script src='/javascript/logout.js'></script>
+  {{/if}}
 </html>
 
-<script src='./javascript/pixi.js'></script>
+{{! <script src='./javascript/pixi.js'></script> }}
