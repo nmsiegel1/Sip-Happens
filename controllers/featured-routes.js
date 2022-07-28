@@ -48,6 +48,7 @@ router.get('/wine/:id', (req, res) => {
       },
       {
         model: User,
+        as: 'voted_wine',
         attributes: ['username'],
       },
     ],
@@ -62,7 +63,7 @@ router.get('/wine/:id', (req, res) => {
       const wine = dbWineData.get({ plain: true });
 
       // pass data to template
-      res.render('wineRec', { wine, loggedIn: req.session.loggedIn });
+      res.render('single-wine', { wine, loggedIn: req.session.loggedIn });
     })
     .catch((err) => {
       console.log(err);
