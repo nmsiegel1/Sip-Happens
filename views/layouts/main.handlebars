@@ -12,10 +12,13 @@
       crossorigin='anonymous'
     />
 
-
-    <link rel="stylesheet"  href="/stylesheets/style.css"  />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/pixi-filters@latest/dist/pixi-filters.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js'
+    ></script>
+    <script
+      src='https://cdn.jsdelivr.net/npm/pixi-filters@latest/dist/pixi-filters.js'
+    ></script>
 
     <svg xmlns='http://www.w3.org/2000/svg' style='display: none'>
       <symbol id='bootstrap' viewBox='0 0 118 94'>
@@ -50,9 +53,7 @@
 
       {{! Sidebar }}
       <div
-
-        id="pixi-mouse"
-
+        id='pixi-mouse'
         class='d-flex flex-column flex-shrink-0 p-3 bg-light sidebar-shadow'
         style='width: 280px'
       >
@@ -78,11 +79,11 @@
             </a>
           </li>
           <li>
-            <a href='/categories' class='nav-link link-dark sec-btn'>
+            <a href='/api/wine' class='nav-link link-dark sec-btn'>
               <svg class='bi pe-none me-2' width='16' height='16'>
                 <use xlink:href='#categories'></use>
               </svg>
-              Suggested Pairings
+              Wines
             </a>
           </li>
           <li>
@@ -141,6 +142,4 @@
   </main>
 </html>
 
-
-      <script src="./javascript/pixi.js"></script>
-
+<script src='./javascript/pixi.js'></script>
