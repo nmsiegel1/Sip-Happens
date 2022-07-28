@@ -374,6 +374,11 @@ a {
   background-color: rgb(130, 39, 39);
 }
 
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: white;
+}
+
 .cart2 {
   fill: white !important;
   margin-right: 5px;
