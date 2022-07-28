@@ -146,7 +146,7 @@ hr {
 }
 
 footer {
-  height: 30vh;
+  height: 53vh;
   width: 100%;
   background-image: url('../images/footer-bg.jpg');
   border-top: rgb(230, 230, 230) solid 1px;
@@ -156,11 +156,11 @@ footer {
 footer p {
   font-size: x-large;
   color: gray;
-  padding-top: 30px;
+  padding-top: 66px;
 }
 
 .footer-img {
-  height: 120px;
+  height: 165px;
 }
 
 .cart {
