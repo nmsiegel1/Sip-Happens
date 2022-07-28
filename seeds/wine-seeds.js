@@ -11,7 +11,7 @@ const wineData = [
       'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2021%2F03%2F26%2Fseafood-boil-FT-RECIPE0321.jpg',
     food_pairing: 'Seafood',
     wine_image:
-      '01-Kendall-Jackson-Chardonnay-3.jpg',
+      'https://images.ctfassets.net/zpx0hfp3jryq/7fwRP7V2VaFRziRirTMY3O/47dc3afc4b5d374305c8a2766d9aff91/Kendall-Jackson-Chardonnay-3.jpg?fm=jpg&fl=progressive',
     wine_url:
       'https://www.vivino.com/US-NC/en/kendall-jackson-vintner-s-reserve-chardonnay/w/2132?bottle_count=1&gclid=Cj0KCQjwz96WBhC8ARIsAATR253eMRHcvbwJ5h-IphpFVgJbCSHtzUVeNxl__I1AAxL6NTDp3ikerUoaAkZJEALw_wcB&istBid=t&istCompanyId=d352232b-82d1-4fe3-80c3-2b824cbf11c9&istFeedId=e1be2e9c-a381-40af-aa01-251793a4fd12&istItemId=pqlpirlra&region_id=110038&utm_campaign=PM_02_413&utm_content=US&utm_medium=paid_search&utm_source=google&year=2018',
   },
