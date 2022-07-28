@@ -75,9 +75,9 @@ Wine.init(
     wine_image: {
       type: DataTypes.TEXT,
       allowNull: false,
-      validate: {
-        isUrl: true,
-      },
+      // validate: {
+      //   isUrl: true,
+      // },
     },
     wine_url: {
       type: DataTypes.TEXT,
