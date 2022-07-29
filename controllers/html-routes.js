@@ -3,13 +3,13 @@ const { User, Wine, Comment, Vote } = require('../models');
 const sequelize = require('../config/connection');
 
 // GET featured wines
-router.get('/', (req, res) => {
+router.get('/home', (req, res) => {
   res.render('featured');
 });
 
-router.get('/login', (req, res) => {
+router.get('/', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/');
+    res.redirect('/home');
     return;
   }
 
@@ -69,6 +69,10 @@ router.get('/wine/:id', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+});
+
+router.get('*', (req, res) => {
+  res.redirect('/');
 });
 
 module.exports = router;

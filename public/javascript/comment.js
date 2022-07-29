@@ -4,9 +4,10 @@ async function commentFormHandler(event) {
   const wine_id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
   ];
-  const comment_text = document.querySelector(
-    'textarea[name="write-comment"]'
-  ).value;
+
+  const comment_text = document
+    .querySelector('textarea[name="comment-body"]')
+    .value.trim();
 
   if (comment_text) {
     const response = await fetch('/api/comments', {
@@ -15,18 +16,15 @@ async function commentFormHandler(event) {
         wine_id,
         comment_text,
       }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
     });
+
     if (response.ok) {
       document.location.reload();
-    } else {
-      alert(response.statusText);
     }
+  } else {
+    alert(response.statusText);
   }
 }
 
-document
-  .querySelector('#comment-button')
-  .addEventListener('submit', commentFormHandler);
+document.querySelector('#comment-button').addEventListener('click', commentFormHandler);
