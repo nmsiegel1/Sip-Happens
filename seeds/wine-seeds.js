@@ -103,7 +103,7 @@ const wineData = [
     type: 'Cabernet Savigon',
     name: 'Justin Cabernet Sauvignon',
     description:
-      "Who doesn’t love a good juicy steak when sipping on a glass of red wine? Well, there’s a reason for that. Meats like steak and lamb have a higher level of fatty proteins in them which help coat your mouth with each bite. This coating in your mouth can diminish the flavor of your next bite of food.",
+    "Who doesn’t love a good juicy steak when sipping on a glass of red wine? Well, there’s a reason for that. Meats like steak and lamb have a higher level of fatty proteins in them which help coat your mouth with each bite. This coating in your mouth can diminish the flavor of your next bite of food. But by sipping on a wine like Cabernet Sauvignon, which has high levels of tannin and acidity, the wine will cut through that fatty coating to clear your palate, making each bite as delicious as the first.",
     food_image:
       'https://www.seriouseats.com/thmb/K40kegtcsC9WbzOCvogu-sjU79k=/1500x1125/filters:fill(auto,1)/butter-basted-pan-seared-steaks-recipe-hero-06-03b1131c58524be2bd6c9851a2fbdbc3.jpg',
     food_pairing: 'Steak',
@@ -127,7 +127,7 @@ const wineData = [
       'https://www.vivino.com/US-NC/en/luca-old-vine-malbec-valle-de-uco/w/74338?year=2018&price_id=28093921',
   },
   {
-    id: 12,
+    id: 10,
     type: 'Rosé',
     name: "Château d'Esclans Whispering Angel Rosé",
     description:
@@ -155,7 +155,7 @@ const wineData = [
       'https://www.vivino.com/US-NC/en/duckhorn-napa-valley-merlot/w/3474?year=2019&price_id=27856306',
   },
   {
-    id: 10,
+    id: 12,
     type: 'Chianti Classico',
     name: 'Castello della Paneretta Chianti Classico Riserva',
     description:
