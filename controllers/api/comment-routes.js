@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 
 //POST comments
 // POST api/comments
-router.post('/', (req, res) => {
+router.post('/', withAuth, (req, res) => {
   //expects {'username': 'example', 'email': 'example@example.com', 'password': '****'}
   if (req.session) {
     Comment.create({
