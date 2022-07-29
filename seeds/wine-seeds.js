@@ -25,7 +25,7 @@ const wineData = [
       'https://s23209.pcdn.co/wp-content/uploads/2014/10/Roasted-VegetablesIMG_0409-1200x1200-cropped.jpg',
     food_pairing: 'Vegetables',
     wine_image:
-      '02-pinot-gri.jpg',
+      'https://images.squarespace-cdn.com/content/v1/54a9e543e4b04f595700140e/1441924557974-I0JJAQ7V6A3M8OFHPKOM/santa.jpg?format=1000w',
     wine_url:
       'https://www.vivino.com/US-NC/en/santa-margherita-pinot-grigio-valdadige/w/1184502',
   },
@@ -39,7 +39,7 @@ const wineData = [
       'https://www.platingsandpairings.com/wp-content/uploads/2021/01/air-fryer-chicken-breasts-recipe-7-scaled.jpg',
     food_pairing: 'Chicken',
     wine_image:
-      '03-sav-blanc.jpg',
+      'https://cdn.shopify.com/s/files/1/0589/1067/1057/products/illuminate-sauvignon-blanc-3.5f0fb9e_x600.jpg?v=1632140813',
     wine_url:
       'https://www.vivino.com/US-NC/en/kim-crawford-sauvignon-blanc/w/66534?ref=nav-search',
   },
@@ -53,7 +53,7 @@ const wineData = [
       'https://www.sandiegorestaurantweek.com/wp-content/uploads/2018/09/iStock-687758388-1030x687.jpg',
     food_pairing: 'Spicy Food',
     wine_image:
-      '04-moscato.jpg',
+      'https://ribolione-images-production-us-east-2-9354302113.s3.us-east-2.amazonaws.com/images/thumbs/0000133_lemon-drop.png',
     wine_url:
       'https://www.vivino.com/US-NC/en/stella-rosa-moscato-d-asti/w/4264359?price_id=22043757',
   },
@@ -67,7 +67,7 @@ const wineData = [
       'https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/17244-caramel-topped-ice-cream-dessert-760x580.jpg?ext=.jpg',
     food_pairing: 'Dessert',
     wine_image:
-      '05-prosecco.jpeg',
+      'https://images.ctfassets.net/zpx0hfp3jryq/2G0ZwSqm9fc9h0fmEne2L7/c89fec33ea769e779f3d62dcf564ba9a/La-Marca-Prosecco-5.jpg?fm=jpg&fl=progressive',
     wine_url: 'https://www.vivino.com/US-NC/en/la-marca-prosecco/w/1126336',
   },
   {
@@ -80,7 +80,7 @@ const wineData = [
       'https://www.thespruceeats.com/thmb/qbqn0_YHPSUPpXdVdy4xy1pYDeg=/2000x1333/filters:fill(auto,1)/thanksgiving-dinner-dishes-836012728-5bdda2e6c9e77c00262539e0.jpg',
     food_pairing: 'Turkey',
     wine_image:
-      '06-chen-blanc.jpg',
+      'https://scontent-atl3-2.xx.fbcdn.net/v/t1.6435-9/64253782_1095733683955772_6778912626064752640_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=973b4a&_nc_ohc=JdB9ttqF4g8AX9gGbEj&_nc_ht=scontent-atl3-2.xx&oh=00_AT9niwNp-C8b8WqXvwYO8Xp8gi7HHQWnnKtlW4Etsly9nA&oe=62FFA5ABg',
     wine_url:
       'https://www.vivino.com/US-NC/en/remhoogte-honeybunch-reserve-chenin-blanc/w/1919433?year=2020&price_id=28633648',
   },
@@ -94,7 +94,7 @@ const wineData = [
       'https://www.totalwine.com/site/binaries/t1637262064309/content/gallery/data-axle/0026-pinot-noir-food-pairings/lamb-chops.png',
     food_pairing: 'Lamb Chops',
     wine_image:
-      '07-pinot-no.webp',
+      'https://burtonsgrill.com/wp-content/uploads/2022/03/Pouring-banner.png',
     wine_url:
       'https://www.vivino.com/US-NC/en/craggy-range-pinot-noir-martinborough-red-wine/w/5731330?year=2018&price_id=24558137',
   },
@@ -108,7 +108,7 @@ const wineData = [
       'https://www.seriouseats.com/thmb/K40kegtcsC9WbzOCvogu-sjU79k=/1500x1125/filters:fill(auto,1)/butter-basted-pan-seared-steaks-recipe-hero-06-03b1131c58524be2bd6c9851a2fbdbc3.jpg',
     food_pairing: 'Steak',
     wine_image:
-      '08-cab-sav.jpg',
+      'https://www.justinwine.com/content/dam/justin/trade-and-media/2021/Justin_Winery2292.jpg',
     wine_url:
       'https://www.vivino.com/US-NC/en/us-justin-cabernet-sauvignon/w/3462',
   },
@@ -122,7 +122,7 @@ const wineData = [
       'https://hips.hearstapps.com/del.h-cdn.co/assets/17/16/1492695774-blue-cheese-burger.jpg',
     food_pairing: 'Blue Cheese Burger',
     wine_image:
-      '09-malbec.webp',
+      'https://thumbs.vivino.com/winery_backgrounds/206OtPAtS5uN2brQgvc3vA_1280x760.jpeg',
     wine_url:
       'https://www.vivino.com/US-NC/en/luca-old-vine-malbec-valle-de-uco/w/74338?year=2018&price_id=28093921',
   },
@@ -136,7 +136,7 @@ const wineData = [
       'https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FSeries%2F2020-06-Snapshot-5-Quick-Dinners-That-Start-with-Rotisserie-Chicken%2FSnapshot-Rotisserie-Chicken_French-Bistro-Chicken-Salad%2F2020-06-08_AT-K19153',
     food_pairing: 'Salads',
     wine_image:
-      '10-rose.webp',
+      'https://cdn.shopify.com/s/files/1/2428/2089/products/Whispering_Angel_Facebook.jpg?v=1584808937',
     wine_url:
       'https://www.vivino.com/US-NC/en/chateau-d-esclans-whispering-angel-rose/w/1104824?ref=nav-search',
   },
@@ -150,7 +150,7 @@ const wineData = [
       'https://cdn1.sph.harvard.edu/wp-content/uploads/sites/30/2020/10/cheese-3463368_1280.jpg',
     food_pairing: 'Cheese',
     wine_image:
-      '11-merlot.jpeg',
+      'https://foodwineclick.files.wordpress.com/2020/10/merlotme_duckhorn_swordfish-20201018-122-edit.jpg?w=512&h=640',
     wine_url:
       'https://www.vivino.com/US-NC/en/duckhorn-napa-valley-merlot/w/3474?year=2019&price_id=27856306',
   },
@@ -164,7 +164,7 @@ const wineData = [
       'https://mshanken.imgix.net/wso/bolt/2021-02/pg2d_lanternalead022521_1600.jpg',
     food_pairing: 'Pizza',
     wine_image:
-      '12-chianti.jpg',
+      'https://i0.wp.com/chabrolwines.com/wp-content/uploads/2020/12/chianti_reserva.jpg?fit=631%2C686&ssl=1',
     wine_url:
       'https://www.vivino.com/US-NC/en/castello-della-paneretta-chianti-classico-riserva/w/1099919?year=2018&price_id=29403234',
   },

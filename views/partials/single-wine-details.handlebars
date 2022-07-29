@@ -30,7 +30,7 @@
 
           <div class="food-info">
             <div class="food-pic">
-              <img src="../images/01-Kendall-Jackson-Chardonnay-3.jpg"  alt="{{name}}">
+              <img src="{{wine_image}}"  alt="{{name}}">
             </div>
             <div class="food-discription">
               <h2>{{name}}</h2>
@@ -42,73 +42,4 @@
                 </a>
             </div>
           </div>
-
-          <!-- Comment Section -->
-        <div class="head-div wine-head">
-            <h1 class="comment-h1">Comments</h1>
-        </div>
-        <div class="comment-input">
-            <div class="comment-input-div">
-                <input type="text" placeholder="Write a comment..." class="comment-input-text bg-light">
-                <button class="comment-input-btn" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                        <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
-                      </svg>
-                </button>
-            </div>
-        </div>
-        <div class="divider"></div>
-        <div class="comments-div">
-            <div class="comment">
-                <div class="comment-discription bg-light">
-                    <h2>Chadwick B</h2>
-                    <p>
-                      This is such a heavenly pairing that I would definitely recommend!!
-                </div>
-            </div>
-        </div>
-        </div>
 </section>
-
-{{!-- _______________ --}}
-
-{{!-- <section class="card">
-  <a href="/wine/{{id}}">
-    <header>{{type}}</header>
-
-    <div class="card-body">
-      <img src="/images/{{wine_image}}" alt="{{name}}">
-      <p> Food Pairing: {{food_pairing}}</p>
-      <p> Description: {{description}}</p>
-      <p> For more information about the {{name}} go to: {{wine_url}}</p>
-    </div>
-  </a>
-</section> --}}
-
-{{!-- comment section --}}
-<div class="comments-div">
-{{> comments wine.comments}}
-{{#if loggedIn}}
-  <div class="card w-80 p-2">
-    <div class="card-body">
-      <form class="comment-description comment-form">
-        <div class="comment-input-div">
-          <textarea class="comment-input-text" name="comment-body"></textarea>
-        </div>
-        <div>
-          <button class="comment-input-btn" type="submit">add comment</button>
-          <button type="button" class="upvote-btn">upvote</button>
-        </div>
-      </form>
-    </div>
-  </div>
-{{/if}}
-</div>
-
-
-{{#if loggedIn}}
-<script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
-{{/if}}
-
-

@@ -17,10 +17,10 @@ async function upvoteClickHandler(event) {
   if (response.ok) {
     document.location.reload();
   } else {
-    alert(response.statusText);
+    alert('You can only vote on each pairing once!');
   }
 }
 
 document
-  .querySelector('.upvote-btn')
+  .querySelector('#upvote-btn')
   .addEventListener('click', upvoteClickHandler);
