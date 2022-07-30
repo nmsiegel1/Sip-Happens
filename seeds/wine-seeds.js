@@ -80,7 +80,7 @@ const wineData = [
       'https://www.thespruceeats.com/thmb/qbqn0_YHPSUPpXdVdy4xy1pYDeg=/2000x1333/filters:fill(auto,1)/thanksgiving-dinner-dishes-836012728-5bdda2e6c9e77c00262539e0.jpg',
     food_pairing: 'Turkey',
     wine_image:
-      'https://scontent-atl3-2.xx.fbcdn.net/v/t1.6435-9/64253782_1095733683955772_6778912626064752640_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=973b4a&_nc_ohc=JdB9ttqF4g8AX9gGbEj&_nc_ht=scontent-atl3-2.xx&oh=00_AT9niwNp-C8b8WqXvwYO8Xp8gi7HHQWnnKtlW4Etsly9nA&oe=62FFA5ABg',
+      'https://scontent-atl3-2.xx.fbcdn.net/v/t1.6435-9/64253782_1095733683955772_6778912626064752640_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=973b4a&_nc_ohc=JdB9ttqF4g8AX9gGbEj&_nc_ht=scontent-atl3-2.xx&oh=00_AT9niwNp-C8b8WqXvwYO8Xp8gi7HHQWnnKtlW4Etsly9nA&oe=62FFA5AB',
     wine_url:
       'https://www.vivino.com/US-NC/en/remhoogte-honeybunch-reserve-chenin-blanc/w/1919433?year=2020&price_id=28633648',
   },
@@ -103,7 +103,7 @@ const wineData = [
     type: 'Cabernet Savigon',
     name: 'Justin Cabernet Sauvignon',
     description:
-      "Who doesn’t love a good juicy steak when sipping on a glass of red wine? Well, there’s a reason for that. Meats like steak and lamb have a higher level of fatty proteins in them which help coat your mouth with each bite. This coating in your mouth can diminish the flavor of your next bite of food.",
+    "Who doesn’t love a good juicy steak when sipping on a glass of red wine? Well, there’s a reason for that. Meats like steak and lamb have a higher level of fatty proteins in them which help coat your mouth with each bite. This coating in your mouth can diminish the flavor of your next bite of food. But by sipping on a wine like Cabernet Sauvignon, which has high levels of tannin and acidity, the wine will cut through that fatty coating to clear your palate, making each bite as delicious as the first.",
     food_image:
       'https://www.seriouseats.com/thmb/K40kegtcsC9WbzOCvogu-sjU79k=/1500x1125/filters:fill(auto,1)/butter-basted-pan-seared-steaks-recipe-hero-06-03b1131c58524be2bd6c9851a2fbdbc3.jpg',
     food_pairing: 'Steak',

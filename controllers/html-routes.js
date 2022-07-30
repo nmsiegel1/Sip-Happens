@@ -2,11 +2,12 @@ const router = require('express').Router();
 const { User, Wine, Comment, Vote } = require('../models');
 const sequelize = require('../config/connection');
 
-// GET featured wines
+// featured wines
 router.get('/home', (req, res) => {
   res.render('featured');
 });
 
+// login page
 router.get('/', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/home');
@@ -16,6 +17,7 @@ router.get('/', (req, res) => {
   res.render('login');
 });
 
+// single wine
 router.get('/wine/:id', (req, res) => {
   Wine.findOne({
     where: {
@@ -69,10 +71,6 @@ router.get('/wine/:id', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
-});
-
-router.get('*', (req, res) => {
-  res.redirect('/');
 });
 
 module.exports = router;

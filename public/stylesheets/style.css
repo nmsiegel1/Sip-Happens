@@ -12,6 +12,9 @@
   position: fixed;
   background-image: url('../images/vineyard.png');
   z-index: 999;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 0%;
 }
 
 .logo {
@@ -303,6 +306,10 @@ a {
   flex-direction: row;
 }
 
+.wine-head h1 {
+  padding-right: 10px;
+}
+
 .upvote-btn {
   padding-left: 10px;
   display: flex;
@@ -475,6 +482,12 @@ a:active {
   margin-top: 10px;
   background-color: rgb(130, 39, 39);
   color: #fff;
+  margin-bottom: 30px;
+}
+
+.sign-up {
+  padding-top: 20px;
+  border-top:rgb(214, 214, 214) solid 1px;
 }
 
 /* Upvote */
