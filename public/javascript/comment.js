@@ -1,29 +1,30 @@
-const commentFormHandler = async function (event) {
+async function commentFormHandler(event) {
   event.preventDefault();
 
-  const body = document.querySelector(
-    'textarea[name="comment-input-text"]'
-  ).value;
   const wine_id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
   ];
 
-  if (body) {
-    await fetch('/api/comments', {
+  const comment_text = document
+    .querySelector('textarea[name="comment-body"]')
+    .value.trim();
+
+  if (comment_text) {
+    const response = await fetch('/api/comments', {
       method: 'POST',
       body: JSON.stringify({
         wine_id,
-        body,
+        comment_text,
       }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
     });
 
-    document.location.reload();
+    if (response.ok) {
+      document.location.reload();
+    }
+  } else {
+    alert(response.statusText);
   }
-};
+}
 
-document
-  .querySelector('.comment-form')
-  .addEventListener('submit', commentFormHandler);
+document.querySelector('#comment-button').addEventListener('click', commentFormHandler);

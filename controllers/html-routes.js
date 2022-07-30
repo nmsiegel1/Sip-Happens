@@ -2,20 +2,22 @@ const router = require('express').Router();
 const { User, Wine, Comment, Vote } = require('../models');
 const sequelize = require('../config/connection');
 
-// GET featured wines
-router.get('/', (req, res) => {
+// featured wines
+router.get('/home', (req, res) => {
   res.render('featured');
 });
 
-router.get('/login', (req, res) => {
+// login page
+router.get('/', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/');
+    res.redirect('/home');
     return;
   }
 
   res.render('login');
 });
 
+// single wine
 router.get('/wine/:id', (req, res) => {
   Wine.findOne({
     where: {
