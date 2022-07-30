@@ -1,16 +1,17 @@
-<div class='comments-div'>
-  <div class='comment'>
-    {{#each this}}
-      <section>
-        <div class='comments'>
-          {{user.username}}
-          on
-          {{format_date created_at}}
-        </div>
-        <div class='comment-discription bg-light'>
-          {{comment_text}}
-        </div>
-      </section>
-    {{/each}}
+  <div class='comments-div'>
+    <div class='comment'>
+      {{#each this}}
+        <section>
+          <div class='comments'>
+            {{user.username}}
+            on
+            {{format_date created_at}}
+          </div>
+          <div class='comment-discription bg-light'>
+            {{comment_text}}
+          </div>
+        </section>
+      {{/each}}
+    </div>
   </div>
-</div>
+</section>

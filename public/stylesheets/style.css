@@ -308,17 +308,7 @@ a {
 
 .wine-head h1 {
   padding-right: 10px;
-}
-
-.upvote-btn {
-  padding-left: 10px;
-  display: flex;
-  flex-direction: row;
-}
-
-.upvote h1 {
-  font-weight: 200;
-  color: rgb(105, 105, 105);
+  white-space: nowrap;
 }
 
 .food-info {
@@ -379,6 +369,11 @@ a {
   font-weight: 300;
   color: white;
   background-color: rgb(130, 39, 39);
+  transition: background-color 200ms ease;
+}
+
+.vavino:hover {
+  background-color: rgba(130, 39, 39, 0.808);
 }
 
 a,
@@ -438,8 +433,10 @@ a:active {
   border: 0;
   border-radius: 10px;
   padding: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-height: 45px;
+  min-height: 45px;
   color: white;
   font-weight: 600;
   font-size: 20px;
@@ -449,7 +446,7 @@ a:active {
 }
 
 .comment-input-btn:hover {
-  background-color: #333;
+  background-color: rgba(130, 39, 39, 0.808);
 }
 
 .divider {
@@ -491,6 +488,46 @@ a:active {
 }
 
 /* Upvote */
+
+.upvote-btn {
+  background-color: rgb(130, 39, 39);
+  border: 0;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-height: 45px;
+  min-height: 45px;
+  color: white;
+  font-weight: 200;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+}
+
+.upvote-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.upvote {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.upvote h1 {
+  font-weight: 200;
+  color: rgb(105, 105, 105);
+}
+
+.vote-count {
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
 
 /* pixi mouse  */
 canvas {

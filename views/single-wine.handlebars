@@ -5,7 +5,6 @@
         <div class="head-div wine-head">
             <h1 class="comment-h1">Comments</h1>
         </div>
-        {{wine.vote_count}} {{format_plural "vote" wine.vote_count}}
         <form class="comment-input" id="comment-form">
             <div class="comment-input-div">
                 <textarea name="comment-body" type="text" placeholder="Write a comment..." id='write-comment' class="comment-input-text bg-light"></textarea>
@@ -16,9 +15,6 @@
                 </button>
             </div>
         </form>
-                 <button class="comment-input-btn" type="button" id="upvote-btn">
-                  Upvote
-                </button>
         <div class="divider"></div>
         {{> comments wine.comments}}
         </div>
