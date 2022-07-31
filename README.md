@@ -1,10 +1,7 @@
 <div id="top"></div>
 
-[![Contributors][contributors-shield]][contributors-url]
+[![Contributors][contributors-shield]][contributors-url][![Issues][issues-shield]][issues-url][![License][license-shield]](./LICENSE.txt)
 
-[![Issues][issues-shield]][issues-url]
-
-[![License][license-shield]](./LICENSE.txt)
 
 
 <br />
@@ -21,7 +18,7 @@
     <a href="https://github.com/nmsiegel1/Sip-Happens"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/nmsiegel1/Sip-Happens">View Demo</a>
+    <a href="https://sip-happens-unc.herokuapp.com/">Deployed Application</a>
     ·
     <a href="https://github.com/nmsiegel1/Sip-Happens/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">Report Bug</a>
     ·
