@@ -2,7 +2,7 @@
 
 [![Contributors][contributors-shield]][contributors-url]
 
-[![Issues][issues-shield]][issues-url]
+[![Issues][issues-shield]][issues-url]]
 
 [![ISC License][license-shield]][license-url]
 
