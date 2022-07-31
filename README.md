@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-[![Contributors][contributors-shield]]  [contributors-url][![Issues][issues-shield]][issues-url]  [![License][license-shield]](./LICENSE.txt)
+[![Contributors][contributors-shield]][contributors-url][![Issues][issues-shield]][issues-url][![License][license-shield]](./LICENSE.txt)
 
 
 
@@ -56,7 +56,7 @@
 
 ## About The Project
 
-![SipHappensScreenshot](/public/images/Demo/DemoHome.png.png)
+![SipHappensScreenshot](/public/images/Demo/DemoHome.png)
 
 Sip Happens!
 
