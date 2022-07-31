@@ -11,6 +11,11 @@
       integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3'
       crossorigin='anonymous'
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script
@@ -119,11 +124,11 @@
             <strong>{{user.username}}</strong>
           </a>
           <ul class='dropdown-menu text-small shadow'>
-              <li><a class='dropdown-item' id='logout' href='#'>Logout</a></li>
+              <li><a class='dropdown-item' id='logout' href='/'>Logout</a></li>
               <li><a
                   class='dropdown-item'
                   id='login'
-                  href='/login'
+                  href='/'
                 >Login</a></li>
           </ul>
         </div>
@@ -153,6 +158,7 @@
   {{#if loggedIn}}
     <script src='/javascript/logout.js'></script>
   {{/if}}
+  
 </html>
 
 {{!-- <script src='./javascript/pixi.js'></script> --}}
