@@ -77,6 +77,12 @@ Interactive and full stack web application, catered to those who have a taste fo
 * [Nodejs](https://nodejs.org/en/)
 * [Handlebarsjs](https://handlebarsjs.com/)
 * [JQuery](https://jquery.com/)
+* [Pixiejs](https://pixijs.com/)
+* [ESLint](https://eslint.org/)
+* [ExpressJs](https://expressjs.com/)
+* [MySQL](https://www.mysql.com/)
+* [Sequelize](https://sequelize.org/)
+
 
 
 
@@ -170,13 +176,13 @@ Distributed under the ISC License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact Contributors
 
-Andrew Byrd -
+Andrew Byrd - andrew.byrds2@gmail.com
 
 Arum Melton - arumjmelton@gmail.com
 
-Mtende Roll -
+Mtende Roll - rollmtende@gmail.com
 
-Nina Siegel -
+Nina Siegel - siegel.nina.m@gmail.com
 
 Project Link: [https://github.com/nmsiegel1/Sip-Happens]
 
@@ -187,11 +193,6 @@ Project Link: [https://github.com/nmsiegel1/Sip-Happens]
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Pixijs](https://pixijs.com/)
-* [ESLint](https://eslint.org/)
-* [ExpressJs](https://expressjs.com/)
-* [MySQL](https://www.mysql.com/)
-* [Sequelize](https://sequelize.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
