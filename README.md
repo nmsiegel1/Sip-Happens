@@ -74,9 +74,9 @@ Interactive and full stack web application, catered to those who have a taste fo
 
 ### Built With
 
-* Nodejs - https://nodejs.org/en/
-* Handlebarsjs - https://handlebarsjs.com/
-* JQuery - https://jquery.com/
+* [Nodejs](https://nodejs.org/en/)
+* [Handlebarsjs](https://handlebarsjs.com/)
+* [JQuery](https://jquery.com/)
 
 
 
@@ -119,7 +119,7 @@ Once the user is successfully signed up or logged in, the application directs th
 
 ![SipHappensScreenshot](/public/images/Demo/DemoScreenshot1.png)
 ![SipHappensScreenshot](/public/images/Demo/DemoScreenshot2.png)
-![SipHappensScreenshot](/public/images/Demo/DemoScreenshotlogin.png)
+![SipHappensScreenshot](/public/images/Demo/LoginDemo.png)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -178,7 +178,7 @@ Mtende Roll -
 
 Nina Siegel -
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/nmsiegel1/Sip-Happens)
+Project Link: [https://github.com/nmsiegel1/Sip-Happens]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
