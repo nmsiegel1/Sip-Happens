@@ -24,7 +24,7 @@ async function commentFormHandler(event) {
       document.location.reload();
     }
   } else {
-    alert(response.statusText);
+    alert("Unable to leave a comment!");
   }
 }
 

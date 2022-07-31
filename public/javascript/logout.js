@@ -9,7 +9,7 @@ async function logout() {
   if (response.ok) {
     document.location.replace('/');
   } else {
-    alert(response.statusText);
+    alert('Unable to log out!');
   }
 }
 
