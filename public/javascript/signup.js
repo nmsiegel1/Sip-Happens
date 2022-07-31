@@ -18,15 +18,13 @@ async function signupFormHandler(event) {
     });
 
     if (response.ok) {
-      // we don't have a dashboard so it will just go to the pairings
       document.location.replace('/');
     } else {
-      alert(response.statusText);
+      alert('Unable to signup!');
     }
   }
 }
 
-// remember these are ids
 document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);

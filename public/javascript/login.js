@@ -2,7 +2,6 @@
 async function loginFormHandler(event) {
   event.preventDefault();
 
-  // remember these are ids
   const email = document.querySelector('#login-email').value.trim();
   const password = document.querySelector('#login-password').value.trim();
 
@@ -19,12 +18,10 @@ async function loginFormHandler(event) {
     if (response.ok) {
       document.location.replace('/');
     } else {
-      alert('You must be logged in to access this page');
+      alert('No user was found with that login information, please sign up!');
     }
   }
 }
-
-// remember these are ids
 
 document
   .querySelector('.login-form')
