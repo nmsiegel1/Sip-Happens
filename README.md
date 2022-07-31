@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/nmsiegel1/Sip-Happens">
-    <img src="public/images/SipHappensLogo.png" alt="Logo" width="200" height="200">
+    <img src="public/images/SipHappensLogo.png" alt="Logo" width="250" height="250">
   </a>
 
 <h3 align="center">Sip Happens</h3>
@@ -55,16 +55,17 @@
 
 
 ## About The Project
+<h3 align="center">Sip Happens!</h3>
+
+
+
+Interactive and full stack web application, catered to those who have a taste for the finer things in life.
+<br/>
 
 ![SipHappensScreenshot](/public/images/Demo/DemoHome.png)
 
-Sip Happens!
 
-Interactive and full stack web application, catered to those who have a taste for the finer things in life.
-
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">back to top</a></p>
 
 
 
@@ -93,7 +94,7 @@ Interactive and full stack web application, catered to those who have a taste fo
 
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">back to top</a></p>
 
 
 
@@ -122,7 +123,7 @@ Interactive and full stack web application, catered to those who have a taste fo
     'db/schema.sql'
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">back to top</a></p>
 
 
 ## Usage
@@ -130,6 +131,8 @@ Interactive and full stack web application, catered to those who have a taste fo
 
 Once the user is successfully signed up or logged in, the application directs them to the home page that will suggest features and present to them a link to 'Vivino' if they wish to purchase . If the user selects 'Wines', they are then redirected to 12 different categories of wine to choose from. Once selected, the user is presented with information based on their selection. The user is then able to comment on the pairings, as well as upvote their favorite combinations.
 <br/>
+<br/>
+
 ![SipHappensScreenshot](/public/images/Demo/LoginDemo.png)
 ![SipHappensScreenshot](/public/images/Demo/DemoCats.png)
 ![SipHappensScreenshot](/public/images/Demo/DemoPair.png)
@@ -137,12 +140,7 @@ Once the user is successfully signed up or logged in, the application directs th
 
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">back to top</a></p>
 
 
 
@@ -172,18 +170,18 @@ Mtende Roll - rollmtende@gmail.com
 
 Nina Siegel - siegel.nina.m@gmail.com
 
-Deployed Application: [https://sip-happens-unc.herokuapp.com/]
+[Deployed Application](https://sip-happens-unc.herokuapp.com/)
 
-Project Link: [https://github.com/nmsiegel1/Sip-Happens]
+[Project Link](https://github.com/nmsiegel1/Sip-Happens)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">back to top</a></p>
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the ISC License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">back to top</a></p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
