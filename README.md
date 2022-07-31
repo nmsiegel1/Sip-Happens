@@ -1,8 +1,8 @@
 <div id="top"></div>
 
-[![Contributors][contributors-shield]][https://github.com/nmsiegel1/Sip-Happens/graphs/contributors]
+[![Contributors][contributors-shield]][contributors-url]
 
-[![Issues][issues-shield]][https://github.com/nmsiegel1/Sip-Happens/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc]
+[![Issues][issues-shield]][issues-url]
 
 [![ISC License][license-shield]][license-url]
 
@@ -10,7 +10,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/nmsiegel1/Sip-Happens">
-    <img src="public/images/SipHappensLogo.png" alt="Logo" width="80" height="80">
+    <img src="public/images/SipHappensLogo.png" alt="Logo" width="200" height="200">
   </a>
 
 <h3 align="center">Sip Happens</h3>
@@ -60,7 +60,7 @@
 
 ## About The Project
 
-[![Sip Happens Screen Shot][DemoScreenshot1.png]]
+[!product-screenshot1]
 
 Sip Happens!
 
@@ -74,9 +74,9 @@ Interactive and full stack web application, catered to those who have a taste fo
 
 ### Built With
 
-* [![Node][Node.js][https://nodejs.org/en/]
-* [![Handlebars][Handlebars.js]][https://handlebarsjs.com/]
-* [![JQuery][JQuery.com]][https://jquery.com/]
+* [!Nodejs][https://nodejs.org/en/]
+* [!Handlebarsjs][https://handlebarsjs.com/]
+* [!JQuery][https://jquery.com/]
 
 
 
@@ -117,7 +117,7 @@ Interactive and full stack web application, catered to those who have a taste fo
 
 Once the user is successfully signed up or logged in, the application directs them to the home page that will suggest features and present to them a link to 'Vivino' if they wish to purchase . If the user selects 'Wines', they are then redirected to 12 different categories of wine to choose from. Once selected, the user is presented with information based on their selection. The user is then able to comment on the pairings, as well as upvote their favorite combinations.
 
-[![Sip Happens Screen Shot][LoginDemo.png][DemoScreenshot2.png]]
+[![Sip Happens Screen Shot][product-screenshotlogin][product-screenshot2]]
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -185,11 +185,11 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [![Pixijs][Pixijs]](https://pixijs.com/)
-* [![ESlint][ESlint]](https://eslint.org/)
-* [![Expressjs][Expressjs]](https://expressjs.com/)
-* [![MySQL][MySQL]](https://www.mysql.com/)
-* [![Sequelize][Sequelize]](https://sequelize.org/)
+* [!Pixijs](https://pixijs.com/)
+* [!ESLint](https://eslint.org/)
+* [!ExpressJs](https://expressjs.com/)
+* [!MySQL](https://www.mysql.com/)
+* [!Sequelize](https://sequelize.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -198,18 +198,20 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
+[contributors-url]: https://github.com/nmsiegel1/Sip-Happens/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
 [forks-url]: https://github.com/github_username/repo_name/network/members
 [stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
 [stars-url]: https://github.com/github_username/repo_name/stargazers
 [issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
+[issues-url]: https://github.com/nmsiegel1/Sip-Happens/issues
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[license-url]: https://github.com/nmsiegel1/Sip-Happens/blob/Readme/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[product-screenshot1]: public/images/Demo/DemoScreenshot1.png
+[product-screenshot2]: public/images/Demo/DemoScreenshot2.png
+[product-screenshotlogin]: public/images/Demo/LoginDemo.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
