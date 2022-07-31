@@ -2,7 +2,7 @@
 
 [![Contributors][contributors-shield]][contributors-url]
 
-[![Issues][issues-shield]][issues-url]]
+[![Issues][issues-shield]][issues-url]
 
 [![ISC License][license-shield]][license-url]
 
@@ -74,14 +74,25 @@ Interactive and full stack web application, catered to those who have a taste fo
 
 ### Built With
 
-* [Nodejs](https://nodejs.org/en/)
-* [Handlebarsjs](https://handlebarsjs.com/)
-* [JQuery](https://jquery.com/)
-* [Pixiejs](https://pixijs.com/)
-* [ESLint](https://eslint.org/)
-* [ExpressJs](https://expressjs.com/)
-* [MySQL](https://www.mysql.com/)
+* [Node.js](https://nodejs.org/en/)
+* [Handlebars](https://handlebarsjs.com/)
 * [Sequelize](https://sequelize.org/)
+* [MySQL](https://www.mysql.com/)
+* [Pixiejs](https://pixijs.com/)
+* [Express Session / Connect Session Sequelize](https://pixijs.com/)
+* [ES6](https://pixijs.com/)
+* [ExpressJs](https://expressjs.com/)
+
+
+
+* [Insomnia](https://eslint.org/)
+* [bcrypt](https://eslint.org/)
+* [dotenv](https://eslint.org/)
+* [ESLint](https://eslint.org/)
+* [Prettier](https://eslint.org/)
+
+
+
 
 
 
@@ -132,21 +143,11 @@ Once the user is successfully signed up or logged in, the application directs th
 
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Display Pairings
-- [ ] Post Comments
-- [ ] Upvote Favorites
-- [ ] Purchase Links
-
-See the [open issues](https://github.com/nmsiegel1/Sip-Happens/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -184,17 +185,16 @@ Mtende Roll - rollmtende@gmail.com
 
 Nina Siegel - siegel.nina.m@gmail.com
 
+Deployed Application: [https://sip-happens-unc.herokuapp.com/]
+
 Project Link: [https://github.com/nmsiegel1/Sip-Happens]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
