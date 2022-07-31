@@ -1,16 +1,14 @@
   <div class='comments-div'>
     <div class='comment'>
       {{#each this}}
-        <section>
           <div class='comments'>
-            {{user.username}}
+            <div class="comment-name">{{user.username}}</div>
             on
-            {{format_date created_at}}
+            <div class="comment-date">{{format_date created_at}}</div>
           </div>
           <div class='comment-discription bg-light'>
             {{comment_text}}
           </div>
-        </section>
       {{/each}}
     </div>
   </div>

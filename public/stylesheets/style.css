@@ -396,17 +396,15 @@ a:active {
   padding-bottom: 20px;
   padding-top: 20px;
   border-radius: 20px;
-  margin-bottom: 50px;
-  margin-top: 15px;
-}
-
-.comment-discription p {
-  padding-top: 10px;
-  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-size: 20px;
+  width: fit-content;
+  outline: rgb(230, 230, 230) solid 1px;
 }
 
 .comment-h1 {
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 20px;
 }
 
@@ -416,6 +414,7 @@ a:active {
   padding-left: 25px;
   border-radius: 10px;
   width: 100%;
+  outline: rgb(230, 230, 230) solid 1px;
 }
 
 .comment-input-text:focus {
@@ -449,8 +448,27 @@ a:active {
   background-color: rgba(130, 39, 39, 0.808);
 }
 
+.comments {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.comment-name {
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.comment-date {
+  margin-left: 5px;
+  color:rgb(146, 146, 146);
+  font-size: 14px;
+}
+
 .divider {
   margin: 10px;
+  margin-bottom: 20px;
   border-bottom: rgb(230, 230, 230) solid 1px;
 }
 
@@ -503,11 +521,14 @@ a:active {
   font-size: 20px;
   cursor: pointer;
   transition: background-color 200ms ease;
+  margin-right: 10px;
 }
 
 .upvote-div {
   display: flex;
   flex-direction: row;
+  margin-top: 40px;
+  align-items: center;
 }
 
 .upvote {
