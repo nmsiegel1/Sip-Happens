@@ -1,3 +1,4 @@
+// allows the user to create user
 async function signupFormHandler(event) {
   event.preventDefault();
 

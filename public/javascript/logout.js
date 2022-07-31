@@ -1,3 +1,4 @@
+// allows the user to logout
 async function logout() {
   console.log('clicked');
   const response = await fetch('/api/users/logout', {

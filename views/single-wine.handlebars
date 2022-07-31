@@ -1,6 +1,6 @@
-{{#if loggedIn}}
 {{>single-wine-details wine}}
 
+{{#if loggedIn}}
 <!-- Like button -->
         <div class="upvote-div">
             <button class="upvote-btn" type="button" id="upvote-btn">
@@ -13,12 +13,13 @@
                 {{wine.vote_count}}
             </div>
         </div>
-
+{{/if}}
 
 {{!-- Comment section --}}
         <div class="head-div wine-head">
             <h1 class="comment-h1">Comments</h1>
         </div>
+{{#if loggedIn}}
         <form class="comment-input" id="comment-form">
             <div class="comment-input-div">
                 <textarea name="comment-body" type="text" placeholder="Write a comment..." id='write-comment' class="comment-input-text bg-light"></textarea>
@@ -30,10 +31,10 @@
             </div>
         </form>
         <div class="divider"></div>
+{{/if}}
         {{> comments wine.comments}}
         </div>
  
-{{/if}}
 
 
 {{#if loggedIn}}

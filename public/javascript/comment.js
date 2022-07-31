@@ -1,3 +1,4 @@
+// allows the user to write a comment
 async function commentFormHandler(event) {
   event.preventDefault();
 

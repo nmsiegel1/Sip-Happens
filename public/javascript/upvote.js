@@ -1,3 +1,4 @@
+// allows user to upvote a wine
 async function upvoteClickHandler(event) {
   event.preventDefault();
 
