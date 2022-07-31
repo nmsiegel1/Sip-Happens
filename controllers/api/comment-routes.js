@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Comment, Wine, Vote, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-//GET comments
 // GET api/comments
 router.get('/', (req, res) => {
   Comment.findAll()
@@ -13,7 +12,6 @@ router.get('/', (req, res) => {
     });
 });
 
-//POST comments
 // POST api/comments
 router.post('/', withAuth, (req, res) => {
   //expects {'username': 'example', 'email': 'example@example.com', 'password': '****'}
@@ -31,7 +29,6 @@ router.post('/', withAuth, (req, res) => {
   }
 });
 
-//DELETE comments by id
 // DELETE api/comments/:id
 router.delete('/:id', withAuth, (req, res) => {
   Comment.destroy({

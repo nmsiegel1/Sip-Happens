@@ -121,22 +121,4 @@ router.put('/upvote', withAuth, (req, res) => {
   }
 });
 
-// POST api/wine/
-// router.post('/', (req, res) => {
-//   Wine.create({
-//     name: req.body.name,
-//     description: req.body.description,
-//     type: req.body.type,
-//     food_pairing: req.body.food_pairing,
-//     wine_image: req.body.wine_image,
-//     wine_url: req.body.wine_url,
-//     food_image: req.body.food_image,
-//   })
-//     .then((dbWineData) => res.json(dbWineData))
-//     .catch((err) => {
-//       console.log(err);
-//       res.status(500).json(err);
-//     });
-// });
-
 module.exports = router;
