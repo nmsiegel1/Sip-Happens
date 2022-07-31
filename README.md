@@ -60,7 +60,7 @@
 
 ## About The Project
 
-[!product-screenshot1]
+![SipHappensScreenshot](/public/images/Demo/DemoScreenshot1.png)
 
 Sip Happens!
 
@@ -74,9 +74,9 @@ Interactive and full stack web application, catered to those who have a taste fo
 
 ### Built With
 
-* [!Nodejs][https://nodejs.org/en/]
-* [!Handlebarsjs][https://handlebarsjs.com/]
-* [!JQuery][https://jquery.com/]
+* Nodejs - https://nodejs.org/en/
+* Handlebarsjs - https://handlebarsjs.com/
+* JQuery - https://jquery.com/
 
 
 
@@ -117,7 +117,9 @@ Interactive and full stack web application, catered to those who have a taste fo
 
 Once the user is successfully signed up or logged in, the application directs them to the home page that will suggest features and present to them a link to 'Vivino' if they wish to purchase . If the user selects 'Wines', they are then redirected to 12 different categories of wine to choose from. Once selected, the user is presented with information based on their selection. The user is then able to comment on the pairings, as well as upvote their favorite combinations.
 
-[![Sip Happens Screen Shot][product-screenshotlogin][product-screenshot2]]
+![SipHappensScreenshot](/public/images/Demo/DemoScreenshot1.png)
+![SipHappensScreenshot](/public/images/Demo/DemoScreenshot2.png)
+![SipHappensScreenshot](/public/images/Demo/DemoScreenshotlogin.png)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -185,11 +187,11 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [!Pixijs](https://pixijs.com/)
-* [!ESLint](https://eslint.org/)
-* [!ExpressJs](https://expressjs.com/)
-* [!MySQL](https://www.mysql.com/)
-* [!Sequelize](https://sequelize.org/)
+* [Pixijs](https://pixijs.com/)
+* [ESLint](https://eslint.org/)
+* [ExpressJs](https://expressjs.com/)
+* [MySQL](https://www.mysql.com/)
+* [Sequelize](https://sequelize.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
