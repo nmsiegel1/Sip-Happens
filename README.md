@@ -79,6 +79,7 @@ Interactive and full stack web application, catered to those who have a taste fo
 * [Express Session / Connect Session Sequelize](https://pixijs.com/)
 * [ES6](https://pixijs.com/)
 * [ExpressJs](https://expressjs.com/)
+* [Typed.js](https://mattboldt.github.io/typed.js/)
 
 #### Addtional Tools
 
