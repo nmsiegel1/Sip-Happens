@@ -53,11 +53,23 @@
                     <div class="form-group">
                         <label for="signup-username">Username:</label>
                         <input type="text"
-                          class="form-control"
+                          class="form-control type-username"
                           id="signup-username"
                           aria-describedby="usernameHelp"
-                          placeholder="Enter username"  />
+                          placeholder=""  />
                     </div>
+                    <script src="/javascript/typed.js"></script>
+                    <script>
+                      var typed = new Typed('.type-username', {
+                      strings: ['Andrew.Byrd', 'Arum.Melton', 'Mtende.Roll', 'Nina.Siegel'],
+                      typeSpeed: 50,
+                      backSpeed: 50,
+                      backDelay: 400,
+                      attr: 'placeholder',
+                      bindInputFocusEvents: true,
+                      loop: true
+                    });
+                    </script>
                     <div class="form-group">
                       <label for="signup-email">Email address</label>
                       <input
